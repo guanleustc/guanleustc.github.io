@@ -1,3 +1,4 @@
 theme: jekyll-theme-midnight
 name: Le
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
