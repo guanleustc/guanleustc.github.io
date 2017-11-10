@@ -9,15 +9,22 @@ permalink: /research/
 
 Here, you can find materials relevant to my published research and research in progress. 
 
-<!--
-I also provide titles for some working papers and works in progress below. I provide full links for these papers when I believe they are ready for peer review. Feel free to contact me if you are interested in some of these projects. [My CV](http://pragmaticlab.net/cv/) contains more information about where some of these projects are in the peer review process.
--->
 
 You can also browse my <a href="http://scholar.google.com/citations?user=gz-6ugcAAAAJ" target="_blank">Google Scholar profile</a>.
 
 <hr style="clear:both;visibility: hidden;" />  
 
-## Publications
+## Journal Publications
+
+{% include publistJ.html%}
+
+## Conference Publications
+
+{% include publistC.html%}
+
+## Other Publications
+
+{% include publistO.html%}
 
 <!---
 ## Publications
