@@ -22,7 +22,7 @@ You can also browse my <a href="http://scholar.google.com/citations?user=gz-6ugc
 
 {% include publistC.html%}
 
-## Other Publications
+## Patents and Other Publications
 
 {% include publistO.html%}
 
