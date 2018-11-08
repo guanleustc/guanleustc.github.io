@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 on Le Guan</title>
+    <link>https://guanle.org/publication_types/2/</link>
+    <description>Recent content in 2 on Le Guan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sat, 01 Sep 2018 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="https://guanle.org/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Copker: A Cryptographic Engine Against Cold-Boot Attacks</title>
+      <link>https://guanle.org/publication/copertdsc/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://guanle.org/publication/copertdsc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Building a Trustworthy Execution Environment to Defeat Exploits from both Cyber Space and Physical Space for ARM</title>
+      <link>https://guanle.org/publication/ts-tdsc/</link>
+      <pubDate>Sun, 01 Jul 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://guanle.org/publication/ts-tdsc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VaultIME: Regaining User Control for Password Managers through Auto-correction</title>
+      <link>https://guanle.org/publication/vaultime-journal/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://guanle.org/publication/vaultime-journal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Secure Computing Using Registers and Caches: The Problem, Challenges, and Solutions</title>
+      <link>https://guanle.org/publication/7782711/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://guanle.org/publication/7782711/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

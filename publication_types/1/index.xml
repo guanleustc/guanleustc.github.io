@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 on Le Guan</title>
+    <link>https://guanle.org/publication_types/1/</link>
+    <description>Recent content in 1 on Le Guan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="https://guanle.org/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CryptMe: Data Leakage Prevention for Unmodified Programs on ARM Devices</title>
+      <link>https://guanle.org/publication/cryptme/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/cryptme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Enforcing Access Controls for the Cryptographic Cloud Service Invocation Based on Virtual Machine Introspection</title>
+      <link>https://guanle.org/publication/enacci/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/enacci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Supporting Transparent Snapshot for Bare-metal Malware Analysis on Mobile Devices</title>
+      <link>https://guanle.org/publication/bolt/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/bolt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TrustShadow: Secure Execution of Unmodified Applications with ARM TrustZone</title>
+      <link>https://guanle.org/publication/trustshadow/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/trustshadow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VCIDS: Collaborative Intrusion Detection of Sensor and Actuator Attacks on Connected Vehicles</title>
+      <link>https://guanle.org/publication/vcids/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/vcids/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VaultIME: Regaining User Control For Password Managers through Auto-correction</title>
+      <link>https://guanle.org/publication/vaultime/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/vaultime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>From Physical to Cyber: Escalating Protection for Personalized Auto Insurance</title>
+      <link>https://guanle.org/publication/insurance/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/insurance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Protecting private keys against memory disclosure attacks using hardware transactional memory</title>
+      <link>https://guanle.org/publication/mimosa/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/mimosa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>virtio-ct: A Secure Cryptographic Token Service in Hypervisors</title>
+      <link>https://guanle.org/publication/guan2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/guan2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Copker: Computing with Private Keys without RAM</title>
+      <link>https://guanle.org/publication/copker/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/copker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Implementing a Covert Timing Channel Based on Mimic Function</title>
+      <link>https://guanle.org/publication/wang2014/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/wang2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fingerprint Embedding: A Proactive Strategy of Detecting Timing Channels</title>
+      <link>https://guanle.org/publication/wang2013/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/wang2013/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

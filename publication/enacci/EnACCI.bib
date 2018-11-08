@@ -1,0 +1,18 @@
+@inproceedings{EnACCI,
+ abstract = {Most cloud providers afford their tenants with cryptographic services that greatly escalate the protection of users' private keys. Isolated from the guest operating systems (OSes), the keys are kept confidential even if the OS kernel is compromised. However, existing cryptographic services are ineffective in the access control of these critical services. In particular, they enforce controls for the key accesses mainly based on non-cryptographic authentication/authorization information (i.e., the identity and the password). Some platforms leverage other information such as the resource identification of the Virtual machine (VM) (e.g., IP address). Therefore, once the password is leaked, the attacker could invoke the cryptographic service in the victim VM. Moreover, sophisticated attackers can exploit vulnerabilities in the guest OS kernel and stealthily invoke cryptographic services. In this paper, we propose a new scheme named En-ACCI to improve the security of cryptographic service invocation in the cloud and achieve better access controls as well as auditing by leveraging the rich VM context provided by virtual machine introspection (VMI). To the best of our knowledge, we are the first in the literature to discuss these security issues involved in the invocation of cryptographic services in the cloud. We address the challenges by using an access control mechanism atop a set of optimization to VMI. We have implemented a prototype of En-ACCI, and our evaluation demonstrates that En-ACCI effectively addresses the authorization and audit issues in the cloud-based cryptographic service and the introduced performance overhead is modest.},
+ address = {Cham},
+ author = {Jiang, Fangjie
+and Cai, Quanwei
+and Guan, Le
+and Lin, Jingqiang},
+ booktitle = {Information Security},
+ editor = {Chen, Liqun
+and Manulis, Mark
+and Schneider, Steve},
+ isbn = {978-3-319-99136-8},
+ pages = {213--230},
+ publisher = {Springer International Publishing},
+ title = {Enforcing Access Controls for the Cryptographic Cloud Service Invocation Based on Virtual Machine Introspection},
+ year = {2018}
+}
+
