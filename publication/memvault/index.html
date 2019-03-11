@@ -15,10 +15,10 @@
   
     
   
-  <meta name="description" content="Cryptographic systems are essential for computer and communication security, for instance, RSA is used in PGP Email clients and AES is employed in full disk encryption. In practice, the cryptographic keys are loaded and stored in RAM as plain-text, and therefore vulnerable to physical memory attacks (e.g., cold-boot attacks). To tackle this problem, we propose Copker, which implements asymmetric cryptosystems entirely within the CPU, without storing plain-text private keys in the RAM. In its active mode, Copker stores kilobytes of sensitive data, including the private key and the intermediate states, only in on-chip CPU caches (and registers). Decryption/signing operations are performed without storing sensitive information in system memory. In the suspend mode, Copker stores symmetrically encrypted private keys in memory, while employs existing solutions to keep the key-encryption key securely in CPU registers. Hence, Copker releases the system resources in the suspend mode. In this paper, we implement Copker with the most common asymmetric cryptosystem, RSA, with the support of multiple private keys. We show that Copker provides decryption signing services that are secure against physical memory attacks. Meanwhile, with intensive experiments, we demonstrate that our implementation of Copker is secure and requires reasonable overhead.">
+  <meta name="description" content="Sensitive data in a process could be scattered over the memory of a computer system for a prolonged period of time. Unfortunately, DRAM chips were proven insecure in previous studies. The problem becomes worse in the mobile environment, in which users&#39; smartphones are easily lost or stolen. The powered-on phones may contain sensitive data in the vulnerable DRAM chips. In this paper, we propose MemVault, a mechanism to protect sensitive data in Android devices against physical memory attacks. MemVault keeps track of the propagation of well-marked sensitive data sources, and selectively encrypts tainted sensitive memory contents in the DRAM chip. When a tainted object is accessed, MemVault redirects the access to the internal RAM (iRAM), where the cipher-text object is decrypted transparently. iRAM is a system-on-chip (SoC) component which is by nature immune to physical memory exploits. We have implemented a MemVault prototype system, and have evaluated it with extensive experiments. Our results validate that MemVault effectively eliminates the occurrences of clear-text sensitive objects in DRAM chips, and imposes acceptable overheads.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://guanle.org/publication/copker/">
+  <link rel="alternate" hreflang="en-us" href="https://guanle.org/publication/memvault/">
 
   
 
@@ -100,30 +100,30 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://guanle.org/publication/copker/">
+  <link rel="canonical" href="https://guanle.org/publication/memvault/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Le Guan">
-  <meta property="og:url" content="https://guanle.org/publication/copker/">
-  <meta property="og:title" content="Copker: Computing with Private Keys without RAM | Le Guan">
-  <meta property="og:description" content="Cryptographic systems are essential for computer and communication security, for instance, RSA is used in PGP Email clients and AES is employed in full disk encryption. In practice, the cryptographic keys are loaded and stored in RAM as plain-text, and therefore vulnerable to physical memory attacks (e.g., cold-boot attacks). To tackle this problem, we propose Copker, which implements asymmetric cryptosystems entirely within the CPU, without storing plain-text private keys in the RAM. In its active mode, Copker stores kilobytes of sensitive data, including the private key and the intermediate states, only in on-chip CPU caches (and registers). Decryption/signing operations are performed without storing sensitive information in system memory. In the suspend mode, Copker stores symmetrically encrypted private keys in memory, while employs existing solutions to keep the key-encryption key securely in CPU registers. Hence, Copker releases the system resources in the suspend mode. In this paper, we implement Copker with the most common asymmetric cryptosystem, RSA, with the support of multiple private keys. We show that Copker provides decryption signing services that are secure against physical memory attacks. Meanwhile, with intensive experiments, we demonstrate that our implementation of Copker is secure and requires reasonable overhead.">
+  <meta property="og:url" content="https://guanle.org/publication/memvault/">
+  <meta property="og:title" content="Protecting Mobile Devices from Physical Memory Attacks with Targeted Encryption | Le Guan">
+  <meta property="og:description" content="Sensitive data in a process could be scattered over the memory of a computer system for a prolonged period of time. Unfortunately, DRAM chips were proven insecure in previous studies. The problem becomes worse in the mobile environment, in which users&#39; smartphones are easily lost or stolen. The powered-on phones may contain sensitive data in the vulnerable DRAM chips. In this paper, we propose MemVault, a mechanism to protect sensitive data in Android devices against physical memory attacks. MemVault keeps track of the propagation of well-marked sensitive data sources, and selectively encrypts tainted sensitive memory contents in the DRAM chip. When a tainted object is accessed, MemVault redirects the access to the internal RAM (iRAM), where the cipher-text object is decrypted transparently. iRAM is a system-on-chip (SoC) component which is by nature immune to physical memory exploits. We have implemented a MemVault prototype system, and have evaluated it with extensive experiments. Our results validate that MemVault effectively eliminates the occurrences of clear-text sensitive objects in DRAM chips, and imposes acceptable overheads.">
   
   
     
   <meta property="og:image" content="https://guanle.org/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2014-01-01T00:00:00-05:00">
+  <meta property="article:published_time" content="2019-01-01T00:00:00-05:00">
   
-  <meta property="article:modified_time" content="2014-01-01T00:00:00-05:00">
-  
-
+  <meta property="article:modified_time" content="2019-01-01T00:00:00-05:00">
   
 
   
 
-  <title>Copker: Computing with Private Keys without RAM | Le Guan</title>
+  
+
+  <title>Protecting Mobile Devices from Physical Memory Attacks with Targeted Encryption | Le Guan</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -275,7 +275,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Copker: Computing with Private Keys without RAM</h1>
+  <h1 itemprop="name">Protecting Mobile Devices from Physical Memory Attacks with Targeted Encryption</h1>
 
   
 
@@ -292,13 +292,22 @@
       <span itemprop="name"><strong>Le Guan</strong></span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Chen Cao</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Sencun Zhu</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
       <span itemprop="name">Jingqiang Lin</span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Bo Luo</span>
+      <span itemprop="name">Peng Liu</span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Jiwu Jing</span>
+      <span itemprop="name">Yubin Xia</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Bo Luo</span>
     </span>
     
   </div>
@@ -306,9 +315,9 @@
 
   <span class="article-date">
     
-    <meta content="2014-01-01 00:00:00 -0500 EST" itemprop="datePublished">
-    <time datetime="2014-01-01 00:00:00 -0500 EST" itemprop="dateModified">
-      Jan 1, 2014
+    <meta content="2019-01-01 00:00:00 -0500 EST" itemprop="datePublished">
+    <time datetime="2019-01-01 00:00:00 -0500 EST" itemprop="dateModified">
+      Jan 1, 2019
     </time>
   </span>
   <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
@@ -328,35 +337,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Copker%3a%20Computing%20with%20Private%20Keys%20without%20RAM&amp;url=https%3a%2f%2fguanle.org%2fpublication%2fcopker%2f"
+         href="https://twitter.com/intent/tweet?text=Protecting%20Mobile%20Devices%20from%20Physical%20Memory%20Attacks%20with%20Targeted%20Encryption&amp;url=https%3a%2f%2fguanle.org%2fpublication%2fmemvault%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fguanle.org%2fpublication%2fcopker%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fguanle.org%2fpublication%2fmemvault%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-facebook-f"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fguanle.org%2fpublication%2fcopker%2f&amp;title=Copker%3a%20Computing%20with%20Private%20Keys%20without%20RAM"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fguanle.org%2fpublication%2fmemvault%2f&amp;title=Protecting%20Mobile%20Devices%20from%20Physical%20Memory%20Attacks%20with%20Targeted%20Encryption"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fguanle.org%2fpublication%2fcopker%2f&amp;title=Copker%3a%20Computing%20with%20Private%20Keys%20without%20RAM"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fguanle.org%2fpublication%2fmemvault%2f&amp;title=Protecting%20Mobile%20Devices%20from%20Physical%20Memory%20Attacks%20with%20Targeted%20Encryption"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Copker%3a%20Computing%20with%20Private%20Keys%20without%20RAM&amp;body=https%3a%2f%2fguanle.org%2fpublication%2fcopker%2f">
+         href="mailto:?subject=Protecting%20Mobile%20Devices%20from%20Physical%20Memory%20Attacks%20with%20Targeted%20Encryption&amp;body=https%3a%2f%2fguanle.org%2fpublication%2fmemvault%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -406,7 +415,7 @@
 
 
 <button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
-        data-filename="/publication/copker/copker.bib">
+        data-filename="/publication/memvault/MemVault.bib">
   Cite
 </button>
 
@@ -436,7 +445,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Cryptographic systems are essential for computer and communication security, for instance, RSA is used in PGP Email clients and AES is employed in full disk encryption. In practice, the cryptographic keys are loaded and stored in RAM as plain-text, and therefore vulnerable to physical memory attacks (e.g., cold-boot attacks). To tackle this problem, we propose Copker, which implements asymmetric cryptosystems entirely within the CPU, without storing plain-text private keys in the RAM. In its active mode, Copker stores kilobytes of sensitive data, including the private key and the intermediate states, only in on-chip CPU caches (and registers). Decryption/signing operations are performed without storing sensitive information in system memory. In the suspend mode, Copker stores symmetrically encrypted private keys in memory, while employs existing solutions to keep the key-encryption key securely in CPU registers. Hence, Copker releases the system resources in the suspend mode. In this paper, we implement Copker with the most common asymmetric cryptosystem, RSA, with the support of multiple private keys. We show that Copker provides decryption signing services that are secure against physical memory attacks. Meanwhile, with intensive experiments, we demonstrate that our implementation of Copker is secure and requires reasonable overhead.</p>
+    <p class="pub-abstract" itemprop="text">Sensitive data in a process could be scattered over the memory of a computer system for a prolonged period of time. Unfortunately, DRAM chips were proven insecure in previous studies. The problem becomes worse in the mobile environment, in which users&rsquo; smartphones are easily lost or stolen. The powered-on phones may contain sensitive data in the vulnerable DRAM chips. In this paper, we propose MemVault, a mechanism to protect sensitive data in Android devices against physical memory attacks. MemVault keeps track of the propagation of well-marked sensitive data sources, and selectively encrypts tainted sensitive memory contents in the DRAM chip. When a tainted object is accessed, MemVault redirects the access to the internal RAM (iRAM), where the cipher-text object is decrypted transparently. iRAM is a system-on-chip (SoC) component which is by nature immune to physical memory exploits. We have implemented a MemVault prototype system, and have evaluated it with extensive experiments. Our results validate that MemVault effectively eliminates the occurrences of clear-text sensitive objects in DRAM chips, and imposes acceptable overheads.</p>
     
 
     
@@ -465,7 +474,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9"><em>21st Annual Network and Distributed System Security Symposium, NDSS&rsquo;14</em> (Acceptance rate: <sup>55</sup>&frasl;<sub>295</sub>=18.6%)</div>
+          <div class="col-12 col-md-9"><em>12th ACM Conference on Security and Privacy in Wireless and MobileNetworks, WiSec&rsquo;19</em></div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -479,7 +488,7 @@
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Date</div>
           <div class="col-12 col-md-9" itemprop="datePublished">
-            January, 2014
+            January, 2019
           </div>
         </div>
       </div>

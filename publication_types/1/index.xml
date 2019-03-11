@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://guanle.org/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Poster: Energy Distribution Matters in Greybox Fuzzing</title>
+      <link>https://guanle.org/publication/fuzzingenergydistribution/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/fuzzingenergydistribution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Protecting Mobile Devices from Physical Memory Attacks with Targeted Encryption</title>
+      <link>https://guanle.org/publication/memvault/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/memvault/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>CryptMe: Data Leakage Prevention for Unmodified Programs on ARM Devices</title>

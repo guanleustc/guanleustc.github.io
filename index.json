@@ -1,5 +1,87 @@
 [
   {
+    "authors": [
+      "Congwu Li",
+      "**Le Guan**",
+      "Jingqiang Lin",
+      "Bo Luo",
+      "Quanwei Cai",
+      "Jiwu Jing",
+      "Jing Wang"
+    ],
+    "categories": null,
+    "content": "",
+    "date": 1546318800,
+    "expirydate": -62135596800,
+    "kind": "page",
+    "lang": "en",
+    "lastmod": 1546318800,
+    "objectID": "24e9050dfb285bc787ce317250df8bb6",
+    "permalink": "https://guanle.org/publication/mimosa-j/",
+    "publishdate": "2019-01-01T00:00:00-05:00",
+    "relpermalink": "/publication/mimosa-j/",
+    "section": "publication",
+    "summary": "Cryptography is essential for computer and network security. In practice, the cryptographic keys are loaded into the memory as plaintext during cryptographic computations. Therefore, the keys are subject to memory disclosure attacks that read unauthorized data from RAM. This paper presents Mimosa, protecting RSA private keys against both software-based and physical memory disclosure attacks. Mimosa uses hardware transactional memory (HTM) to ensure that (a) whenever a malicious process attempts to read the plaintext private key, the transaction aborts and all sensitive data are automatically cleared, due to the atomicity guarantee of HTM; and (b) all sensitive data appear as plaintext only within caches, and are never loaded to RAM chips. To the best of our knowledge, Mimosa is the first to use transactional memory to protect sensitive data against memory attacks. We implemented Mimosa with Intel TSX. However, the fragility of TSX transactions introduces extra cache-clogging denial-of-service (DoS) threats, and attackers could sharply degrade the performance. We further partition an RSA private-key computation into multiple transactional parts, while (sensitive) intermediate results are protected across transactional parts. Experiments show that Mimosa effectively protects cryptographic keys against memory disclosure attacks, and introduces a small overhead, even with concurrent cache-clogging workloads.",
+    "tags": [
+      "Random access memory;Cryptography;Registers;Kernel;Hardware;Cold-Boot Attack;CPU-Bound Encryption;DMA Attack;Memory Disclosure Attack;Transactional Memory"
+    ],
+    "title": "Mimosa: Protecting Private Keys against Memory Disclosure Attacks using Hardware Transactional Memory",
+    "type": "publication"
+  },
+  {
+    "authors": [
+      "Lingyun Situ",
+      "Linzhang Wang",
+      "Xuandong Li",
+      "**Le Guan**",
+      "Wenhui Zhang",
+      "Peng Liu"
+    ],
+    "categories": null,
+    "content": "",
+    "date": 1546318800,
+    "expirydate": -62135596800,
+    "kind": "page",
+    "lang": "en",
+    "lastmod": 1546318800,
+    "objectID": "1faf3fd8c3136d6dc615f755e2689f24",
+    "permalink": "https://guanle.org/publication/fuzzingenergydistribution/",
+    "publishdate": "2019-01-01T00:00:00-05:00",
+    "relpermalink": "/publication/fuzzingenergydistribution/",
+    "section": "publication",
+    "summary": "Existing energy distribution strategies of AFL and its variants have two limitations. (1) They focus on increasing coverage but ignore the fact that some code regions are more likely to be vulnerable. (2) They randomly select mutators and deterministically specify the number to mutator, therefore lack insights regarding which granularity of mutators are more helpful at that particular stage. We improve the two limitations of AFL’s fuzzing energy distribution in a principled way. We direct the fuzzer to strengthen fuzzing toward regions that have a higher probability to contain vulnerabilities based on static semantic metrics of the target program. Furthermore, granularity-aware scheduling of mutators is proposed, which dynamically assigns ratios to different mutation operators. We implemented these improvements as an extension to AFL. Large-scale experimental evaluations showed the effectiveness of each improvement and performance of integration. The proposed tool has helped us find 12 new bugs and expose three new CVEs.",
+    "tags": null,
+    "title": "Poster: Energy Distribution Matters in Greybox Fuzzing",
+    "type": "publication"
+  },
+  {
+    "authors": [
+      "**Le Guan**",
+      "Chen Cao",
+      "Sencun Zhu",
+      "Jingqiang Lin",
+      "Peng Liu",
+      "Yubin Xia",
+      "Bo Luo"
+    ],
+    "categories": null,
+    "content": "",
+    "date": 1546318800,
+    "expirydate": -62135596800,
+    "kind": "page",
+    "lang": "en",
+    "lastmod": 1546318800,
+    "objectID": "a5d3cd5753d23a7b2f03cb863b6144ed",
+    "permalink": "https://guanle.org/publication/memvault/",
+    "publishdate": "2019-01-01T00:00:00-05:00",
+    "relpermalink": "/publication/memvault/",
+    "section": "publication",
+    "summary": "Sensitive data in a process could be scattered over the memory of a computer system for a prolonged period of time. Unfortunately, DRAM chips were proven insecure in previous studies. The problem becomes worse in the mobile environment, in which users' smartphones are easily lost or stolen. The powered-on phones may contain sensitive data in the vulnerable DRAM chips. In this paper, we propose MemVault, a mechanism to protect sensitive data in Android devices against physical memory attacks. MemVault keeps track of the propagation of well-marked sensitive data sources, and selectively encrypts tainted sensitive memory contents in the DRAM chip. When a tainted object is accessed, MemVault redirects the access to the internal RAM (iRAM), where the cipher-text object is decrypted transparently. iRAM is a system-on-chip (SoC) component which is by nature immune to physical memory exploits. We have implemented a MemVault prototype system, and have evaluated it with extensive experiments. Our results validate that MemVault effectively eliminates the occurrences of clear-text sensitive objects in DRAM chips, and imposes acceptable overheads.",
+    "tags": null,
+    "title": "Protecting Mobile Devices from Physical Memory Attacks with Targeted Encryption",
+    "type": "publication"
+  },
+  {
     "authors": null,
     "categories": null,
     "content": " In this tutorial, I\u0026rsquo;ll share my top 10 tips for getting started with Academic:\nTip 1 \u0026hellip;\nTip 2 \u0026hellip;\n",
@@ -20,12 +102,12 @@
   },
   {
     "authors": [
-      "**L. Guan**",
-      "J. Lin",
-      "Z. Ma",
-      "B. Luo",
-      "L. Xia",
-      "J. Jing"
+      "**Le Guan**",
+      "Jingqiang Lin",
+      "Ziqiang Ma",
+      "Bo Luo",
+      "Luning Xia",
+      "Jiwu Jing"
     ],
     "categories": null,
     "content": "",

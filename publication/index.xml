@@ -13,6 +13,33 @@
     
     
     <item>
+      <title>Mimosa: Protecting Private Keys against Memory Disclosure Attacks using Hardware Transactional Memory</title>
+      <link>https://guanle.org/publication/mimosa-j/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/mimosa-j/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Poster: Energy Distribution Matters in Greybox Fuzzing</title>
+      <link>https://guanle.org/publication/fuzzingenergydistribution/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/fuzzingenergydistribution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Protecting Mobile Devices from Physical Memory Attacks with Targeted Encryption</title>
+      <link>https://guanle.org/publication/memvault/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/memvault/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Copker: A Cryptographic Engine Against Cold-Boot Attacks</title>
       <link>https://guanle.org/publication/copertdsc/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 -0400</pubDate>
