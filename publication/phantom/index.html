@@ -15,10 +15,10 @@
   
     
   
-  <meta name="description" content="">
+  <meta name="description" content="A smart home connects tens of home devices to the Internet, where an IoT cloud runs various home automation applications. While bringing unprecedented convenience and accessibility, it also introduces various security hazards to users. Prior research studied smart home security from several aspects. However, we found that the complexity of the interactions among the participating entities (i.e., devices, IoT clouds, and mobile apps) has not yet been systematically investigated. In this work, we conducted an in-depth analysis of five widely-used smart home platforms. Combining firmware analysis, network traffic interception, and blackbox testing, we reverse-engineered the details of the interactions among the participating entities. Based on the details, we inferred three legitimate state transition diagrams for the three entities, respectively. Using these state machines as a reference model, we identified a set of unexpected state transitions. To confirm and trigger the unexpected state transitions, we implemented a set of phantom devices to mimic a real device. By instructing the phantom devices to intervene in the normal entity-entity interactions, we have discovered several new vulnerabilities and a spectrum of attacks against real-world smart home platforms.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://guanle.org/publication/wang2013/">
+  <link rel="alternate" hreflang="en-us" href="https://guanle.org/publication/phantom/">
 
   
 
@@ -100,30 +100,30 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://guanle.org/publication/wang2013/">
+  <link rel="canonical" href="https://guanle.org/publication/phantom/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Le Guan">
-  <meta property="og:url" content="https://guanle.org/publication/wang2013/">
-  <meta property="og:title" content="Fingerprint Embedding: A Proactive Strategy of Detecting Timing Channels | Le Guan">
-  <meta property="og:description" content="">
+  <meta property="og:url" content="https://guanle.org/publication/phantom/">
+  <meta property="og:title" content="Discovering and Understanding the Security Hazards in the Interactions between IoT Devices, Mobile Apps, and Clouds on Smart Home Platforms | Le Guan">
+  <meta property="og:description" content="A smart home connects tens of home devices to the Internet, where an IoT cloud runs various home automation applications. While bringing unprecedented convenience and accessibility, it also introduces various security hazards to users. Prior research studied smart home security from several aspects. However, we found that the complexity of the interactions among the participating entities (i.e., devices, IoT clouds, and mobile apps) has not yet been systematically investigated. In this work, we conducted an in-depth analysis of five widely-used smart home platforms. Combining firmware analysis, network traffic interception, and blackbox testing, we reverse-engineered the details of the interactions among the participating entities. Based on the details, we inferred three legitimate state transition diagrams for the three entities, respectively. Using these state machines as a reference model, we identified a set of unexpected state transitions. To confirm and trigger the unexpected state transitions, we implemented a set of phantom devices to mimic a real device. By instructing the phantom devices to intervene in the normal entity-entity interactions, we have discovered several new vulnerabilities and a spectrum of attacks against real-world smart home platforms.">
   
   
     
   <meta property="og:image" content="https://guanle.org/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2013-01-01T00:00:00-05:00">
+  <meta property="article:published_time" content="2019-05-27T19:20:50&#43;00:00">
   
-  <meta property="article:modified_time" content="2013-01-01T00:00:00-05:00">
-  
-
+  <meta property="article:modified_time" content="2019-08-14T00:00:00&#43;00:00">
   
 
   
 
-  <title>Fingerprint Embedding: A Proactive Strategy of Detecting Timing Channels | Le Guan</title>
+  
+
+  <title>Discovering and Understanding the Security Hazards in the Interactions between IoT Devices, Mobile Apps, and Clouds on Smart Home Platforms | Le Guan</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -275,7 +275,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Fingerprint Embedding: A Proactive Strategy of Detecting Timing Channels</h1>
+  <h1 itemprop="name">Discovering and Understanding the Security Hazards in the Interactions between IoT Devices, Mobile Apps, and Clouds on Smart Home Platforms</h1>
 
   
 
@@ -289,19 +289,28 @@
   
   <div>
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Jing Wang</span>
+      <span itemprop="name">Wei Zhou</span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Peng Liu</span>
+      <span itemprop="name">Yan Jia</span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Limin Liu</span>
+      <span itemprop="name">Yao Yao</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Lipeng Zhu</span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
       <span itemprop="name"><strong>Le Guan</strong></span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Jiwu Jing</span>
+      <span itemprop="name">Yuhang Mao</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Peng Liu</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Yuqing Zhang</span>
     </span>
     
   </div>
@@ -309,9 +318,9 @@
 
   <span class="article-date">
     
-    <meta content="2013-01-01 00:00:00 -0500 EST" itemprop="datePublished">
-    <time datetime="2013-01-01 00:00:00 -0500 EST" itemprop="dateModified">
-      Jan 1, 2013
+    <meta content="2019-08-14 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2019-08-14 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      Aug 14, 2019
     </time>
   </span>
   <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
@@ -331,35 +340,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Fingerprint%20Embedding%3a%20A%20Proactive%20Strategy%20of%20Detecting%20Timing%20Channels&amp;url=https%3a%2f%2fguanle.org%2fpublication%2fwang2013%2f"
+         href="https://twitter.com/intent/tweet?text=Discovering%20and%20Understanding%20the%20Security%20Hazards%20in%20the%20Interactions%20between%20IoT%20Devices%2c%20Mobile%20Apps%2c%20and%20Clouds%20on%20Smart%20Home%20Platforms&amp;url=https%3a%2f%2fguanle.org%2fpublication%2fphantom%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fguanle.org%2fpublication%2fwang2013%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fguanle.org%2fpublication%2fphantom%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-facebook-f"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fguanle.org%2fpublication%2fwang2013%2f&amp;title=Fingerprint%20Embedding%3a%20A%20Proactive%20Strategy%20of%20Detecting%20Timing%20Channels"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fguanle.org%2fpublication%2fphantom%2f&amp;title=Discovering%20and%20Understanding%20the%20Security%20Hazards%20in%20the%20Interactions%20between%20IoT%20Devices%2c%20Mobile%20Apps%2c%20and%20Clouds%20on%20Smart%20Home%20Platforms"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fguanle.org%2fpublication%2fwang2013%2f&amp;title=Fingerprint%20Embedding%3a%20A%20Proactive%20Strategy%20of%20Detecting%20Timing%20Channels"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fguanle.org%2fpublication%2fphantom%2f&amp;title=Discovering%20and%20Understanding%20the%20Security%20Hazards%20in%20the%20Interactions%20between%20IoT%20Devices%2c%20Mobile%20Apps%2c%20and%20Clouds%20on%20Smart%20Home%20Platforms"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Fingerprint%20Embedding%3a%20A%20Proactive%20Strategy%20of%20Detecting%20Timing%20Channels&amp;body=https%3a%2f%2fguanle.org%2fpublication%2fwang2013%2f">
+         href="mailto:?subject=Discovering%20and%20Understanding%20the%20Security%20Hazards%20in%20the%20Interactions%20between%20IoT%20Devices%2c%20Mobile%20Apps%2c%20and%20Clouds%20on%20Smart%20Home%20Platforms&amp;body=https%3a%2f%2fguanle.org%2fpublication%2fphantom%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -409,7 +418,7 @@
 
 
 <button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
-        data-filename="/publication/wang2013/Wang2013.bib">
+        data-filename="/publication/phantom/phantom.bib">
   Cite
 </button>
 
@@ -438,6 +447,9 @@
   <div class="article-container">
 
     
+    <h3>Abstract</h3>
+    <p class="pub-abstract" itemprop="text">A smart home connects tens of home devices to the Internet, where an IoT cloud runs various home automation applications. While bringing unprecedented convenience and accessibility, it also introduces various security hazards to users. Prior research studied smart home security from several aspects. However, we found that the complexity of the interactions among the participating entities (i.e., devices, IoT clouds, and mobile apps) has not yet been systematically investigated. In this work, we conducted an in-depth analysis of five widely-used smart home platforms. Combining firmware analysis, network traffic interception, and blackbox testing, we reverse-engineered the details of the interactions among the participating entities. Based on the details, we inferred three legitimate state transition diagrams for the three entities, respectively. Using these state machines as a reference model, we identified a set of unexpected state transitions. To confirm and trigger the unexpected state transitions, we implemented a set of phantom devices to mimic a real device. By instructing the phantom devices to intervene in the normal entity-entity interactions, we have discovered several new vulnerabilities and a spectrum of attacks against real-world smart home platforms.</p>
+    
 
     
     <div class="row">
@@ -465,7 +477,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9"><em>Information and Communications Security: 15th International Conference, ICICS 2013, Beijing, China, November 20-22, 2013. Proceedings</em></div>
+          <div class="col-12 col-md-9"><em>28th USENIX Security Symposium (USENIX Security 19)</em></div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -479,7 +491,7 @@
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Date</div>
           <div class="col-12 col-md-9" itemprop="datePublished">
-            January, 2013
+            August, 2019
           </div>
         </div>
       </div>

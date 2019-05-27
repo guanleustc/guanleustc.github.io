@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Le Guan on Le Guan</title>
@@ -7,8 +6,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 14 Aug 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Discovering and Understanding the Security Hazards in the Interactions between IoT Devices, Mobile Apps, and Clouds on Smart Home Platforms</title>
+      <link>https://guanle.org/publication/phantom/</link>
+      <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://guanle.org/publication/phantom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Protecting Mobile Devices from Physical Memory Attacks with Targeted Encryption</title>
+      <link>https://guanle.org/publication/memvault/</link>
+      <pubDate>Fri, 17 May 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://guanle.org/publication/memvault/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Mimosa: Protecting Private Keys against Memory Disclosure Attacks using Hardware Transactional Memory</title>
@@ -25,15 +42,6 @@
       <pubDate>Tue, 01 Jan 2019 00:00:00 -0500</pubDate>
       
       <guid>https://guanle.org/publication/fuzzingenergydistribution/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Protecting Mobile Devices from Physical Memory Attacks with Targeted Encryption</title>
-      <link>https://guanle.org/publication/memvault/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 -0500</pubDate>
-      
-      <guid>https://guanle.org/publication/memvault/</guid>
       <description></description>
     </item>
     
@@ -109,10 +117,10 @@
       
       <guid>https://guanle.org/talk/example/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;p&gt;Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.&lt;/p&gt;
+  
+Click on the **Slides** button above to view the built-in slides feature.
 
 &lt;/div&gt;
-
 
 &lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
 
@@ -159,15 +167,6 @@
       <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
       
       <guid>https://guanle.org/publication/vaultime/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Secure Computing Using Registers and Caches: The Problem, Challenges, and Solutions</title>
-      <link>https://guanle.org/publication/7782711/</link>
-      <pubDate>Tue, 01 Nov 2016 00:00:00 -0400</pubDate>
-      
-      <guid>https://guanle.org/publication/7782711/</guid>
       <description></description>
     </item>
     

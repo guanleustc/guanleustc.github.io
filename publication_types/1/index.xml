@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Tue, 01 Jan 2019 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 14 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://guanle.org/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Discovering and Understanding the Security Hazards in the Interactions between IoT Devices, Mobile Apps, and Clouds on Smart Home Platforms</title>
+      <link>https://guanle.org/publication/phantom/</link>
+      <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://guanle.org/publication/phantom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Protecting Mobile Devices from Physical Memory Attacks with Targeted Encryption</title>
+      <link>https://guanle.org/publication/memvault/</link>
+      <pubDate>Fri, 17 May 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://guanle.org/publication/memvault/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Poster: Energy Distribution Matters in Greybox Fuzzing</title>
@@ -18,15 +36,6 @@
       <pubDate>Tue, 01 Jan 2019 00:00:00 -0500</pubDate>
       
       <guid>https://guanle.org/publication/fuzzingenergydistribution/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Protecting Mobile Devices from Physical Memory Attacks with Targeted Encryption</title>
-      <link>https://guanle.org/publication/memvault/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 -0500</pubDate>
-      
-      <guid>https://guanle.org/publication/memvault/</guid>
       <description></description>
     </item>
     

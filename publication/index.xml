@@ -13,6 +13,24 @@
     
     
     <item>
+      <title>Discovering and Understanding the Security Hazards in the Interactions between IoT Devices, Mobile Apps, and Clouds on Smart Home Platforms</title>
+      <link>https://guanle.org/publication/phantom/</link>
+      <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://guanle.org/publication/phantom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Protecting Mobile Devices from Physical Memory Attacks with Targeted Encryption</title>
+      <link>https://guanle.org/publication/memvault/</link>
+      <pubDate>Fri, 17 May 2019 00:00:00 -0400</pubDate>
+      
+      <guid>https://guanle.org/publication/memvault/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Mimosa: Protecting Private Keys against Memory Disclosure Attacks using Hardware Transactional Memory</title>
       <link>https://guanle.org/publication/mimosa-j/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 -0500</pubDate>
@@ -27,15 +45,6 @@
       <pubDate>Tue, 01 Jan 2019 00:00:00 -0500</pubDate>
       
       <guid>https://guanle.org/publication/fuzzingenergydistribution/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Protecting Mobile Devices from Physical Memory Attacks with Targeted Encryption</title>
-      <link>https://guanle.org/publication/memvault/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 -0500</pubDate>
-      
-      <guid>https://guanle.org/publication/memvault/</guid>
       <description></description>
     </item>
     
