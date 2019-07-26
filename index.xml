@@ -6,8 +6,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 14 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Dec 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Secure Cryptography Infrastructures in the Clouds</title>
+      <link>https://guanle.org/publication/globecom-2019/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://guanle.org/publication/globecom-2019/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Discovering and Understanding the Security Hazards in the Interactions between IoT Devices, Mobile Apps, and Clouds on Smart Home Platforms</title>
@@ -46,6 +55,15 @@
     </item>
     
     <item>
+      <title>Protecting Mobile Devices from Physical Memory Attacks with Targeted Encryption</title>
+      <link>https://guanle.org/publication/mem-vault/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://guanle.org/publication/mem-vault/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Example Page</title>
       <link>https://guanle.org/tutorial/example/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 -0400</pubDate>
@@ -75,6 +93,15 @@
     </item>
     
     <item>
+      <title>Copker: A Cryptographic Engine Against Cold-Boot Attacks</title>
+      <link>https://guanle.org/publication/coper-tdsc/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://guanle.org/publication/coper-tdsc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Building a Trustworthy Execution Environment to Defeat Exploits from both Cyber Space and Physical Space for ARM</title>
       <link>https://guanle.org/publication/ts-tdsc/</link>
       <pubDate>Sun, 01 Jul 2018 00:00:00 -0400</pubDate>
@@ -89,6 +116,15 @@
       <pubDate>Tue, 01 May 2018 00:00:00 -0400</pubDate>
       
       <guid>https://guanle.org/publication/vaultime-journal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VaultIME: Regaining User Control for Password Managers through Auto-correction</title>
+      <link>https://guanle.org/publication/vault-ime-journal/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://guanle.org/publication/vault-ime-journal/</guid>
       <description></description>
     </item>
     
@@ -111,62 +147,11 @@
     </item>
     
     <item>
-      <title>Example Talk</title>
-      <link>https://guanle.org/talk/example/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      <title>CryptMe: Data Leakage Prevention for Unmodified Programs on ARM Devices</title>
+      <link>https://guanle.org/publication/crypt-me/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://guanle.org/talk/example/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  
-Click on the **Slides** button above to view the built-in slides feature.
-
-&lt;/div&gt;
-
-&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Academic&amp;rsquo;s &lt;em&gt;Slides&lt;/em&gt; feature and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Further talk details can easily be added to this page using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Supporting Transparent Snapshot for Bare-metal Malware Analysis on Mobile Devices</title>
-      <link>https://guanle.org/publication/bolt/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://guanle.org/publication/bolt/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>TrustShadow: Secure Execution of Unmodified Applications with ARM TrustZone</title>
-      <link>https://guanle.org/publication/trustshadow/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://guanle.org/publication/trustshadow/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>VCIDS: Collaborative Intrusion Detection of Sensor and Actuator Attacks on Connected Vehicles</title>
-      <link>https://guanle.org/publication/vcids/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://guanle.org/publication/vcids/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>VaultIME: Regaining User Control For Password Managers through Auto-correction</title>
-      <link>https://guanle.org/publication/vaultime/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://guanle.org/publication/vaultime/</guid>
+      <guid>https://guanle.org/publication/crypt-me/</guid>
       <description></description>
     </item>
     

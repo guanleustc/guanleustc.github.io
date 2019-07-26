@@ -4,7 +4,7 @@
     <url>
     
       <loc>https://guanle.org/publication_types/1/</loc>
-      <lastmod>2019-08-14T00:00:00+00:00</lastmod>
+      <lastmod>2019-12-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -12,16 +12,8 @@
     
     <url>
     
-      <loc>https://guanle.org/publication/phantom/</loc>
-      <lastmod>2019-08-14T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>https://guanle.org/</loc>
-      <lastmod>2019-08-14T00:00:00+00:00</lastmod>
+      <lastmod>2019-12-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -30,8 +22,24 @@
     <url>
     
       <loc>https://guanle.org/publication_types/</loc>
-      <lastmod>2019-08-14T00:00:00+00:00</lastmod>
+      <lastmod>2019-12-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://guanle.org/publication/globecom-2019/</loc>
+      <lastmod>2019-12-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://guanle.org/publication/phantom/</loc>
+      <lastmod>2019-08-14T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -89,6 +97,14 @@
     
     <url>
     
+      <loc>https://guanle.org/publication/mem-vault/</loc>
+      <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://guanle.org/tutorial/example/</loc>
       <lastmod>2018-09-09T00:00:00-04:00</lastmod>
     </url>
@@ -116,6 +132,14 @@
       <loc>https://guanle.org/tags/random-access-memorycryptographyregisterscomputerscathode-ray-tubeskernelcache-as-ramcold-boot-attackpublic-key-cryptography-implementationdeterministic-random-bit-generator/</loc>
       <lastmod>2018-09-01T00:00:00-04:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://guanle.org/publication/coper-tdsc/</loc>
+      <lastmod>2018-09-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -183,6 +207,14 @@
     
     <url>
     
+      <loc>https://guanle.org/publication/vault-ime-journal/</loc>
+      <lastmod>2018-05-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://guanle.org/publication/cryptme/</loc>
       <lastmod>2018-01-01T00:00:00-05:00</lastmod>
     </url>
@@ -193,6 +225,22 @@
     
       <loc>https://guanle.org/publication/enacci/</loc>
       <lastmod>2018-01-01T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://guanle.org/publication/crypt-me/</loc>
+      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://guanle.org/publication/en-acci/</loc>
+      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -299,6 +347,14 @@
     
     <url>
     
+      <loc>https://guanle.org/publication/vault-ime/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://guanle.org/publication/7782711/</loc>
       <lastmod>2016-11-01T00:00:00-04:00</lastmod>
     </url>
@@ -391,6 +447,14 @@
     
     <url>
     
+      <loc>https://guanle.org/publication/guan-2015/</loc>
+      <lastmod>2015-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://guanle.org/publication/copker/</loc>
       <lastmod>2014-01-01T00:00:00-05:00</lastmod>
     </url>
@@ -407,8 +471,24 @@
     
     <url>
     
+      <loc>https://guanle.org/publication/wang-2014/</loc>
+      <lastmod>2014-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://guanle.org/publication/wang2013/</loc>
       <lastmod>2013-01-01T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://guanle.org/publication/wang-2013/</loc>
+      <lastmod>2013-01-01T00:00:00+00:00</lastmod>
     </url>
     
   

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 14 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://guanle.org/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Secure Cryptography Infrastructures in the Clouds</title>
+      <link>https://guanle.org/publication/globecom-2019/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://guanle.org/publication/globecom-2019/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Discovering and Understanding the Security Hazards in the Interactions between IoT Devices, Mobile Apps, and Clouds on Smart Home Platforms</title>
@@ -40,6 +49,15 @@
     </item>
     
     <item>
+      <title>Protecting Mobile Devices from Physical Memory Attacks with Targeted Encryption</title>
+      <link>https://guanle.org/publication/mem-vault/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://guanle.org/publication/mem-vault/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>CryptMe: Data Leakage Prevention for Unmodified Programs on ARM Devices</title>
       <link>https://guanle.org/publication/cryptme/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 -0500</pubDate>
@@ -54,6 +72,24 @@
       <pubDate>Mon, 01 Jan 2018 00:00:00 -0500</pubDate>
       
       <guid>https://guanle.org/publication/enacci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CryptMe: Data Leakage Prevention for Unmodified Programs on ARM Devices</title>
+      <link>https://guanle.org/publication/crypt-me/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://guanle.org/publication/crypt-me/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Enforcing Access Controls for the Cryptographic Cloud Service Invocation Based on Virtual Machine Introspection</title>
+      <link>https://guanle.org/publication/en-acci/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://guanle.org/publication/en-acci/</guid>
       <description></description>
     </item>
     
@@ -94,6 +130,15 @@
     </item>
     
     <item>
+      <title>VaultIME: Regaining User Control For Password Managers through Auto-correction</title>
+      <link>https://guanle.org/publication/vault-ime/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://guanle.org/publication/vault-ime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>From Physical to Cyber: Escalating Protection for Personalized Auto Insurance</title>
       <link>https://guanle.org/publication/insurance/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 -0500</pubDate>
@@ -121,6 +166,15 @@
     </item>
     
     <item>
+      <title>virtio-ct: A Secure Cryptographic Token Service in Hypervisors</title>
+      <link>https://guanle.org/publication/guan-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://guanle.org/publication/guan-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Copker: Computing with Private Keys without RAM</title>
       <link>https://guanle.org/publication/copker/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 -0500</pubDate>
@@ -139,11 +193,29 @@
     </item>
     
     <item>
+      <title>Implementing a Covert Timing Channel Based on Mimic Function</title>
+      <link>https://guanle.org/publication/wang-2014/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://guanle.org/publication/wang-2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Fingerprint Embedding: A Proactive Strategy of Detecting Timing Channels</title>
       <link>https://guanle.org/publication/wang2013/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 -0500</pubDate>
       
       <guid>https://guanle.org/publication/wang2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fingerprint Embedding: A Proactive Strategy of Detecting Timing Channels</title>
+      <link>https://guanle.org/publication/wang-2013/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://guanle.org/publication/wang-2013/</guid>
       <description></description>
     </item>
     
