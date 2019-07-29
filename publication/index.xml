@@ -31,15 +31,6 @@
     </item>
     
     <item>
-      <title>Protecting Mobile Devices from Physical Memory Attacks with Targeted Encryption</title>
-      <link>https://guanle.org/publication/memvault/</link>
-      <pubDate>Fri, 17 May 2019 00:00:00 -0400</pubDate>
-      
-      <guid>https://guanle.org/publication/memvault/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Mimosa: Protecting Private Keys against Memory Disclosure Attacks using Hardware Transactional Memory</title>
       <link>https://guanle.org/publication/mimosa-j/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 -0500</pubDate>
@@ -90,15 +81,6 @@
       <pubDate>Sun, 01 Jul 2018 00:00:00 -0400</pubDate>
       
       <guid>https://guanle.org/publication/ts-tdsc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>VaultIME: Regaining User Control for Password Managers through Auto-correction</title>
-      <link>https://guanle.org/publication/vaultime-journal/</link>
-      <pubDate>Tue, 01 May 2018 00:00:00 -0400</pubDate>
-      
-      <guid>https://guanle.org/publication/vaultime-journal/</guid>
       <description></description>
     </item>
     
@@ -171,15 +153,6 @@
       <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
       
       <guid>https://guanle.org/publication/vcids/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>VaultIME: Regaining User Control For Password Managers through Auto-correction</title>
-      <link>https://guanle.org/publication/vaultime/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://guanle.org/publication/vaultime/</guid>
       <description></description>
     </item>
     
