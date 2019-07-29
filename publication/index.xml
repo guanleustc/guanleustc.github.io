@@ -67,15 +67,6 @@
     </item>
     
     <item>
-      <title>Copker: A Cryptographic Engine Against Cold-Boot Attacks</title>
-      <link>https://guanle.org/publication/coper-tdsc/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://guanle.org/publication/coper-tdsc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Building a Trustworthy Execution Environment to Defeat Exploits from both Cyber Space and Physical Space for ARM</title>
       <link>https://guanle.org/publication/ts-tdsc/</link>
       <pubDate>Sun, 01 Jul 2018 00:00:00 -0400</pubDate>
@@ -108,24 +99,6 @@
       <pubDate>Mon, 01 Jan 2018 00:00:00 -0500</pubDate>
       
       <guid>https://guanle.org/publication/enacci/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CryptMe: Data Leakage Prevention for Unmodified Programs on ARM Devices</title>
-      <link>https://guanle.org/publication/crypt-me/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://guanle.org/publication/crypt-me/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Enforcing Access Controls for the Cryptographic Cloud Service Invocation Based on Virtual Machine Introspection</title>
-      <link>https://guanle.org/publication/en-acci/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://guanle.org/publication/en-acci/</guid>
       <description></description>
     </item>
     
@@ -202,15 +175,6 @@
     </item>
     
     <item>
-      <title>virtio-ct: A Secure Cryptographic Token Service in Hypervisors</title>
-      <link>https://guanle.org/publication/guan-2015/</link>
-      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://guanle.org/publication/guan-2015/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Copker: Computing with Private Keys without RAM</title>
       <link>https://guanle.org/publication/copker/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 -0500</pubDate>
@@ -229,29 +193,11 @@
     </item>
     
     <item>
-      <title>Implementing a Covert Timing Channel Based on Mimic Function</title>
-      <link>https://guanle.org/publication/wang-2014/</link>
-      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://guanle.org/publication/wang-2014/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Fingerprint Embedding: A Proactive Strategy of Detecting Timing Channels</title>
       <link>https://guanle.org/publication/wang2013/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 -0500</pubDate>
       
       <guid>https://guanle.org/publication/wang2013/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Fingerprint Embedding: A Proactive Strategy of Detecting Timing Channels</title>
-      <link>https://guanle.org/publication/wang-2013/</link>
-      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://guanle.org/publication/wang-2013/</guid>
       <description></description>
     </item>
     

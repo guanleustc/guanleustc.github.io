@@ -31,15 +31,6 @@
     </item>
     
     <item>
-      <title>Copker: A Cryptographic Engine Against Cold-Boot Attacks</title>
-      <link>https://guanle.org/publication/coper-tdsc/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://guanle.org/publication/coper-tdsc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Building a Trustworthy Execution Environment to Defeat Exploits from both Cyber Space and Physical Space for ARM</title>
       <link>https://guanle.org/publication/ts-tdsc/</link>
       <pubDate>Sun, 01 Jul 2018 00:00:00 -0400</pubDate>
