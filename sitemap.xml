@@ -4,7 +4,7 @@
     <url>
     
       <loc>https://guanle.org/publication_types/1/</loc>
-      <lastmod>2019-12-10T00:00:00+00:00</lastmod>
+      <lastmod>2020-12-22T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -12,8 +12,16 @@
     
     <url>
     
+      <loc>https://guanle.org/publication/rehosting/</loc>
+      <lastmod>2020-12-22T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://guanle.org/</loc>
-      <lastmod>2019-12-10T00:00:00+00:00</lastmod>
+      <lastmod>2020-12-22T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -22,8 +30,77 @@
     <url>
     
       <loc>https://guanle.org/publication_types/</loc>
-      <lastmod>2019-12-10T00:00:00+00:00</lastmod>
+      <lastmod>2020-12-22T00:00:00-05:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://guanle.org/publication/laelaps/</loc>
+      <lastmod>2020-12-09T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://guanle.org/tags/</loc>
+      <lastmod>2020-12-09T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://guanle.org/tags/firmware-emulation/</loc>
+      <lastmod>2020-12-09T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://guanle.org/tags/microcontroller/</loc>
+      <lastmod>2020-12-09T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://guanle.org/tags/symbolic-execution/</loc>
+      <lastmod>2020-12-09T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://guanle.org/publication_types/2/</loc>
+      <lastmod>2020-12-01T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://guanle.org/publication/electricvehiclesreview/</loc>
+      <lastmod>2020-12-01T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://guanle.org/publication/electricvehicles/</loc>
+      <lastmod>2020-07-24T00:00:00-04:00</lastmod>
     </url>
     
   
@@ -54,15 +131,6 @@
     
     <url>
     
-      <loc>https://guanle.org/publication_types/2/</loc>
-      <lastmod>2019-01-01T00:00:00-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>https://guanle.org/publication/mimosa-j/</loc>
       <lastmod>2019-01-01T00:00:00-05:00</lastmod>
     </url>
@@ -80,15 +148,6 @@
     <url>
     
       <loc>https://guanle.org/tags/random-access-memorycryptographyregisterskernelhardwarecold-boot-attackcpu-bound-encryptiondma-attackmemory-disclosure-attacktransactional-memory/</loc>
-      <lastmod>2019-01-01T00:00:00-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://guanle.org/tags/</loc>
       <lastmod>2019-01-01T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>

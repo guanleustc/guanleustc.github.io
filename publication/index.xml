@@ -13,6 +13,42 @@
     
     
     <item>
+      <title>From Library Portability to Para-rehosting: Natively Executing Open-source Microcontroller OSs on Commodity Hardware</title>
+      <link>https://guanle.org/publication/rehosting/</link>
+      <pubDate>Tue, 22 Dec 2020 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/rehosting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Device-Agnostic Firmware Execution is Possible: A Concolic Execution Approach for Peripheral Emulation</title>
+      <link>https://guanle.org/publication/laelaps/</link>
+      <pubDate>Wed, 09 Dec 2020 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/laelaps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cyber-Physical Security of Powertrain Systems in Modern Electric Vehicles: Vulnerabilities, Challenges and Future Visions</title>
+      <link>https://guanle.org/publication/electricvehiclesreview/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/electricvehiclesreview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Systematic Assessment of Cyber-physical Security of Energy Management System for Connected and Automated Electric Vehicles</title>
+      <link>https://guanle.org/publication/electricvehicles/</link>
+      <pubDate>Fri, 24 Jul 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://guanle.org/publication/electricvehicles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>TF-BIV: Transparent and Fine-grained Binary Integrity Verification in the Cloud</title>
       <link>https://guanle.org/publication/acsac-2019/</link>
       <pubDate>Tue, 10 Dec 2019 00:00:00 +0000</pubDate>

@@ -6,8 +6,44 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Tue, 10 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Dec 2020 00:00:00 -0500</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>From Library Portability to Para-rehosting: Natively Executing Open-source Microcontroller OSs on Commodity Hardware</title>
+      <link>https://guanle.org/publication/rehosting/</link>
+      <pubDate>Tue, 22 Dec 2020 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/rehosting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Device-Agnostic Firmware Execution is Possible: A Concolic Execution Approach for Peripheral Emulation</title>
+      <link>https://guanle.org/publication/laelaps/</link>
+      <pubDate>Wed, 09 Dec 2020 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/laelaps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cyber-Physical Security of Powertrain Systems in Modern Electric Vehicles: Vulnerabilities, Challenges and Future Visions</title>
+      <link>https://guanle.org/publication/electricvehiclesreview/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/electricvehiclesreview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Systematic Assessment of Cyber-physical Security of Energy Management System for Connected and Automated Electric Vehicles</title>
+      <link>https://guanle.org/publication/electricvehicles/</link>
+      <pubDate>Fri, 24 Jul 2020 00:00:00 -0400</pubDate>
+      
+      <guid>https://guanle.org/publication/electricvehicles/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>TF-BIV: Transparent and Fine-grained Binary Integrity Verification in the Cloud</title>
@@ -116,57 +152,6 @@
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://guanle.org/publication/crypt-me/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Enforcing Access Controls for the Cryptographic Cloud Service Invocation Based on Virtual Machine Introspection</title>
-      <link>https://guanle.org/publication/en-acci/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://guanle.org/publication/en-acci/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Example Talk</title>
-      <link>https://guanle.org/talk/example/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://guanle.org/talk/example/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  
-Click on the **Slides** button above to view the built-in slides feature.
-
-&lt;/div&gt;
-
-&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Academic&amp;rsquo;s &lt;em&gt;Slides&lt;/em&gt; feature and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Further talk details can easily be added to this page using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Supporting Transparent Snapshot for Bare-metal Malware Analysis on Mobile Devices</title>
-      <link>https://guanle.org/publication/bolt/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://guanle.org/publication/bolt/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>TrustShadow: Secure Execution of Unmodified Applications with ARM TrustZone</title>
-      <link>https://guanle.org/publication/trustshadow/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://guanle.org/publication/trustshadow/</guid>
       <description></description>
     </item>
     

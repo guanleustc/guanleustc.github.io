@@ -15,10 +15,10 @@
   
     
   
-  <meta name="description" content="">
+  <meta name="description" content="With the rapid proliferation of IoT devices, our cyberspace is nowadays dominated by billions of low-cost computing nodes, which are very heterogeneous to each other. Dynamic analysis, one of the most effective approaches to finding software bugs, has become paralyzed due to the lack of a generic emulator capable of running diverse previously-unseen firmware. In recent years, we have witnessed devastating security breaches targeting low-end microcontroller-based IoT devices. These security concerns have significantly hamstrung further evolution of the IoT technology. In this work, we present Laelaps, a device emulator specifically designed to run diverse software of microcontroller devices. We do not encode into our emulator any specific information about a device. Instead, Laelaps infers the expected behavior of firmware via symbolic-execution-assisted peripheral emulation and generates proper inputs to steer concrete execution on the fly. This unique design feature makes Laelaps capable of running diverse firmware with no a priori knowledge about the target device. To demonstrate the capabilities of Laelaps, we applied dynamic analysis techniques on top of our emulator. We successfully identified both self-injected and real-world vulnerabilities. ">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://guanle.org/publication/globecom-2019/">
+  <link rel="alternate" hreflang="en-us" href="https://guanle.org/publication/laelaps/">
 
   
 
@@ -100,30 +100,30 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://guanle.org/publication/globecom-2019/">
+  <link rel="canonical" href="https://guanle.org/publication/laelaps/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Le Guan">
-  <meta property="og:url" content="https://guanle.org/publication/globecom-2019/">
-  <meta property="og:title" content="Secure Cryptography Infrastructures in the Clouds | Le Guan">
-  <meta property="og:description" content="">
+  <meta property="og:url" content="https://guanle.org/publication/laelaps/">
+  <meta property="og:title" content="Device-Agnostic Firmware Execution is Possible: A Concolic Execution Approach for Peripheral Emulation | Le Guan">
+  <meta property="og:description" content="With the rapid proliferation of IoT devices, our cyberspace is nowadays dominated by billions of low-cost computing nodes, which are very heterogeneous to each other. Dynamic analysis, one of the most effective approaches to finding software bugs, has become paralyzed due to the lack of a generic emulator capable of running diverse previously-unseen firmware. In recent years, we have witnessed devastating security breaches targeting low-end microcontroller-based IoT devices. These security concerns have significantly hamstrung further evolution of the IoT technology. In this work, we present Laelaps, a device emulator specifically designed to run diverse software of microcontroller devices. We do not encode into our emulator any specific information about a device. Instead, Laelaps infers the expected behavior of firmware via symbolic-execution-assisted peripheral emulation and generates proper inputs to steer concrete execution on the fly. This unique design feature makes Laelaps capable of running diverse firmware with no a priori knowledge about the target device. To demonstrate the capabilities of Laelaps, we applied dynamic analysis techniques on top of our emulator. We successfully identified both self-injected and real-world vulnerabilities. ">
   
   
     
   <meta property="og:image" content="https://guanle.org/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-07-26T02:55:00&#43;00:00">
+  <meta property="article:published_time" content="2020-12-09T00:00:00-05:00">
   
-  <meta property="article:modified_time" content="2019-12-09T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2020-12-09T00:00:00-05:00">
   
 
   
 
-  <title>Secure Cryptography Infrastructures in the Clouds | Le Guan</title>
+  
+
+  <title>Device-Agnostic Firmware Execution is Possible: A Concolic Execution Approach for Peripheral Emulation | Le Guan</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -275,7 +275,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Secure Cryptography Infrastructures in the Clouds</h1>
+  <h1 itemprop="name">Device-Agnostic Firmware Execution is Possible: A Concolic Execution Approach for Peripheral Emulation</h1>
 
   
 
@@ -289,25 +289,16 @@
   
   <div>
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Dawei Chu</span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Kaijie Zhu</span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Quanwei Cai</span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Jingqiang Lin</span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Fengjun Li</span>
+      <span itemprop="name">Chen Cao</span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
       <span itemprop="name"><strong>Le Guan</strong></span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Lingchen Zhang</span>
+      <span itemprop="name">Jiang Ming</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Peng Liu</span>
     </span>
     
   </div>
@@ -315,9 +306,9 @@
 
   <span class="article-date">
     
-    <meta content="2019-12-09 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-    <time datetime="2019-12-09 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-      Dec 9, 2019
+    <meta content="2020-12-09 00:00:00 -0500 EST" itemprop="datePublished">
+    <time datetime="2020-12-09 00:00:00 -0500 EST" itemprop="dateModified">
+      Dec 9, 2020
     </time>
   </span>
   <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
@@ -337,35 +328,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Secure%20Cryptography%20Infrastructures%20in%20the%20Clouds&amp;url=https%3a%2f%2fguanle.org%2fpublication%2fglobecom-2019%2f"
+         href="https://twitter.com/intent/tweet?text=Device-Agnostic%20Firmware%20Execution%20is%20Possible%3a%20A%20Concolic%20Execution%20Approach%20for%20Peripheral%20Emulation&amp;url=https%3a%2f%2fguanle.org%2fpublication%2flaelaps%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fguanle.org%2fpublication%2fglobecom-2019%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fguanle.org%2fpublication%2flaelaps%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-facebook-f"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fguanle.org%2fpublication%2fglobecom-2019%2f&amp;title=Secure%20Cryptography%20Infrastructures%20in%20the%20Clouds"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fguanle.org%2fpublication%2flaelaps%2f&amp;title=Device-Agnostic%20Firmware%20Execution%20is%20Possible%3a%20A%20Concolic%20Execution%20Approach%20for%20Peripheral%20Emulation"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fguanle.org%2fpublication%2fglobecom-2019%2f&amp;title=Secure%20Cryptography%20Infrastructures%20in%20the%20Clouds"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fguanle.org%2fpublication%2flaelaps%2f&amp;title=Device-Agnostic%20Firmware%20Execution%20is%20Possible%3a%20A%20Concolic%20Execution%20Approach%20for%20Peripheral%20Emulation"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Secure%20Cryptography%20Infrastructures%20in%20the%20Clouds&amp;body=https%3a%2f%2fguanle.org%2fpublication%2fglobecom-2019%2f">
+         href="mailto:?subject=Device-Agnostic%20Firmware%20Execution%20is%20Possible%3a%20A%20Concolic%20Execution%20Approach%20for%20Peripheral%20Emulation&amp;body=https%3a%2f%2fguanle.org%2fpublication%2flaelaps%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -410,12 +401,18 @@
 
 
   
+    
+  
 
+
+<a class="btn btn-outline-primary my-1 mr-1" href="https://doi.org/10.1145/3427228.3427280" target="_blank" rel="noopener">
+  PDF
+</a>
 
 
 
 <button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
-        data-filename="/publication/globecom-2019/globecom-2019.bib">
+        data-filename="/publication/laelaps/laelaps.bib">
   Cite
 </button>
 
@@ -431,6 +428,10 @@
 
 
 
+<a class="btn btn-outline-primary my-1 mr-1" href="https://doi.org/10.1145/3427228.3427280" target="_blank" rel="noopener">
+  DOI
+</a>
+
 
 
 </div>
@@ -443,6 +444,9 @@
 
   <div class="article-container">
 
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract" itemprop="text">With the rapid proliferation of IoT devices, our cyberspace is nowadays dominated by billions of low-cost computing nodes, which are very heterogeneous to each other. Dynamic analysis, one of the most effective approaches to finding software bugs, has become paralyzed due to the lack of a generic emulator capable of running diverse previously-unseen firmware. In recent years, we have witnessed devastating security breaches targeting low-end microcontroller-based IoT devices. These security concerns have significantly hamstrung further evolution of the IoT technology. In this work, we present Laelaps, a device emulator specifically designed to run diverse software of microcontroller devices. We do not encode into our emulator any specific information about a device. Instead, Laelaps infers the expected behavior of firmware via symbolic-execution-assisted peripheral emulation and generates proper inputs to steer concrete execution on the fly. This unique design feature makes Laelaps capable of running diverse firmware with no a priori knowledge about the target device. To demonstrate the capabilities of Laelaps, we applied dynamic analysis techniques on top of our emulator. We successfully identified both self-injected and real-world vulnerabilities.</p>
     
 
     
@@ -471,7 +475,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9"><em>2019 IEEE Global Communications Conference, GLOBECOM&rsquo;19</em></div>
+          <div class="col-12 col-md-9"><em>Annual Computer Security Applications Conference, ACSAC&rsquo;20 (Acceptance rate 23.2% = <sup>70</sup>&frasl;<sub>302</sub>)</em></div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -485,7 +489,7 @@
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Date</div>
           <div class="col-12 col-md-9" itemprop="datePublished">
-            December, 2019
+            December, 2020
           </div>
         </div>
       </div>
@@ -498,6 +502,19 @@
     <div class="article-style"></div>
 
     
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="">symbolic execution</a>
+  
+  <a class="badge badge-light" href="/tags/microcontroller/">microcontroller</a>
+  
+  <a class="badge badge-light" href="">firmware emulation</a>
+  
+</div>
+
+
 
     
 
