@@ -10,11 +10,29 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Automatic Firmware Emulation through Invalidity-guided Knowledge Inference</title>
+      <link>https://guanle.org/publication/uemu/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/uemu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>From Library Portability to Para-rehosting: Natively Executing Open-source Microcontroller OSs on Commodity Hardware</title>
       <link>https://guanle.org/publication/rehosting/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 -0500</pubDate>
       
       <guid>https://guanle.org/publication/rehosting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reviewing IoT Security via Logic Bugs in IoT Platforms and Systems</title>
+      <link>https://guanle.org/publication/logicbugs/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/logicbugs/</guid>
       <description></description>
     </item>
     
@@ -134,24 +152,6 @@
       <pubDate>Sun, 01 Jul 2018 00:00:00 -0400</pubDate>
       
       <guid>https://guanle.org/publication/ts-tdsc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>VaultIME: Regaining User Control for Password Managers through Auto-correction</title>
-      <link>https://guanle.org/publication/vault-ime-journal/</link>
-      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://guanle.org/publication/vault-ime-journal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CryptMe: Data Leakage Prevention for Unmodified Programs on ARM Devices</title>
-      <link>https://guanle.org/publication/crypt-me/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://guanle.org/publication/crypt-me/</guid>
       <description></description>
     </item>
     
