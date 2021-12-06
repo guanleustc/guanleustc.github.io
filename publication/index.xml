@@ -13,6 +13,24 @@
     
     
     <item>
+      <title>𝜇AFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware</title>
+      <link>https://guanle.org/publication/uafl/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/uafl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ICS3Fuzzer: A Framework for Discovering Protocol Implementation Bugs in ICS Supervisory Software by Fuzzing</title>
+      <link>https://guanle.org/publication/ics-3-fuzzer/</link>
+      <pubDate>Sun, 05 Dec 2021 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/ics-3-fuzzer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Automatic Firmware Emulation through Invalidity-guided Knowledge Inference</title>
       <link>https://guanle.org/publication/uemu/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 -0500</pubDate>
@@ -180,6 +198,15 @@
       <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
       
       <guid>https://guanle.org/publication/trustshadow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VCIDS: Collaborative Intrusion Detection of Sensor and Actuator Attacks on Connected Vehicles</title>
+      <link>https://guanle.org/publication/vcids/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/vcids/</guid>
       <description></description>
     </item>
     

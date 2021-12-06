@@ -6,8 +6,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 06 Dec 2021 00:00:00 -0500</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>𝜇AFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware</title>
+      <link>https://guanle.org/publication/uafl/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/uafl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ICS3Fuzzer: A Framework for Discovering Protocol Implementation Bugs in ICS Supervisory Software by Fuzzing</title>
+      <link>https://guanle.org/publication/ics-3-fuzzer/</link>
+      <pubDate>Sun, 05 Dec 2021 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/ics-3-fuzzer/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Automatic Firmware Emulation through Invalidity-guided Knowledge Inference</title>
@@ -135,24 +153,6 @@
 
 &lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Copker: A Cryptographic Engine Against Cold-Boot Attacks</title>
-      <link>https://guanle.org/publication/coper-tdsc/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://guanle.org/publication/coper-tdsc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Building a Trustworthy Execution Environment to Defeat Exploits from both Cyber Space and Physical Space for ARM</title>
-      <link>https://guanle.org/publication/ts-tdsc/</link>
-      <pubDate>Sun, 01 Jul 2018 00:00:00 -0400</pubDate>
-      
-      <guid>https://guanle.org/publication/ts-tdsc/</guid>
-      <description></description>
     </item>
     
   </channel>
