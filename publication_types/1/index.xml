@@ -7,15 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Mon, 06 Dec 2021 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 19 Jan 2022 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://guanle.org/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>HARM: Hardware-assisted Continuous Re-randomization for Microcontrollers</title>
+      <link>https://guanle.org/publication/harm/</link>
+      <pubDate>Wed, 19 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/harm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>𝜇AFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware</title>
       <link>https://guanle.org/publication/uafl/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 -0500</pubDate>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
       
       <guid>https://guanle.org/publication/uafl/</guid>
       <description></description>

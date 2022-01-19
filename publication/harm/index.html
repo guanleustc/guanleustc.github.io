@@ -15,10 +15,10 @@
   
     
   
-  <meta name="description" content="Finding  bugs  in  microcontroller  (MCU)  firmwareis   challenging,   even   for   device   manufacturers   who   own   thesource  code.  The  MCU  runs  different  instruction  sets  than  x86and  exposes  a  very  different  development  environment.  Thisinvalidates  many  existing  sophisticated  software  testing  tools  onx86.  To  maintain  a  unified  developing  and  testing  environment,a  straightforward  way  is  to  re-compile  the  source  code  into  thenative  executable  for  a  commodity  machine  (called  rehosting).However,  ad-hoc re-hosting  is  a  daunting  and  tedious  task  and subject  to  many  issues  (library-dependence,  kernel-dependenceand  hardware-dependence).  In  this  work,  we  systematically  ex-plore the portability problem of MCU software and propose para-rehosting to ease the porting process. Specifically, we abstract andimplement a portable MCU (PMCU) using the POSIX interface. It  models  common  functions  of  the  MCU  cores.  For  peripheralspecific  logic,  we  propose  HAL-based  peripheral  function  re-placement,  in  which  high-level  hardware  functions  are  replacedwith  an  equivalent  backend  driver  on  the  host.  These  backenddrivers are invoked by well-designed para-APIs and can be reusedacross  many  MCU  OSs.  We  categorize  common  HAL  functionsinto  four  types  and  implement  templates  for  quick  backenddevelopment. Using the proposed approach, we have successfully rehosted  nine  MCU  OSs  including  the  widely  deployed  AmazonFreeRTOS, ARM Mbed OS, Zephyr and LiteOS. To demonstratethe  superiority  of  our  approach  in  terms  of  security  testing,  weused off-the-shelf dynamic analysis tools (AFL and ASAN) againstthe  rehosted  programs  and  discovered  24  previously-unknownbugs,  among  which  5  were  confirmed  by  CVE  and  others  wereconfirmed  by  vendors.">
+  <meta name="description" content="Microcontroller-based embedded systems (MCUs) have become ubiquitous with the emergence of IoT technology. Given its critical roles in many applications, its security is becoming increasingly important. Unfortunately, MCU devices are especially vulnerable. Code reuse attacks are particularly noteworthy since the memory address of firmware code is static. This work seeks to combat code reuse attacks, including ROP and more advanced JIT-ROP via continuous randomization. Previous proposals are geared towards full-fledged OSs with rich runtime environments, and therefore cannot be applied to MCUs. We propose the first solution for ARM-based MCUs leveraging the ARM TrustZone extension. Our system, named HARM, comprises a secure runtime and a binary analysis tool with rewriting module. The secure runtime, protected inside the secure world, proactively triggers and performs non-bypassable randomization to the firmware running in a sandbox in the normal world. Our system does not rely on any firmware feature, and therefore is generally applicable to both baremetal and RTOS-powered firmware. We have implemented a HARM prototype on a real development board. Our evaluation results indicate that the proposed system can effectively thaw code reuse attacks while keeping the performance and energy overhead low.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://guanle.org/publication/rehosting/">
+  <link rel="alternate" hreflang="en-us" href="https://guanle.org/publication/harm/">
 
   
 
@@ -100,30 +100,30 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://guanle.org/publication/rehosting/">
+  <link rel="canonical" href="https://guanle.org/publication/harm/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Le Guan">
-  <meta property="og:url" content="https://guanle.org/publication/rehosting/">
-  <meta property="og:title" content="From Library Portability to Para-rehosting: Natively Executing Open-source Microcontroller OSs on Commodity Hardware | Le Guan">
-  <meta property="og:description" content="Finding  bugs  in  microcontroller  (MCU)  firmwareis   challenging,   even   for   device   manufacturers   who   own   thesource  code.  The  MCU  runs  different  instruction  sets  than  x86and  exposes  a  very  different  development  environment.  Thisinvalidates  many  existing  sophisticated  software  testing  tools  onx86.  To  maintain  a  unified  developing  and  testing  environment,a  straightforward  way  is  to  re-compile  the  source  code  into  thenative  executable  for  a  commodity  machine  (called  rehosting).However,  ad-hoc re-hosting  is  a  daunting  and  tedious  task  and subject  to  many  issues  (library-dependence,  kernel-dependenceand  hardware-dependence).  In  this  work,  we  systematically  ex-plore the portability problem of MCU software and propose para-rehosting to ease the porting process. Specifically, we abstract andimplement a portable MCU (PMCU) using the POSIX interface. It  models  common  functions  of  the  MCU  cores.  For  peripheralspecific  logic,  we  propose  HAL-based  peripheral  function  re-placement,  in  which  high-level  hardware  functions  are  replacedwith  an  equivalent  backend  driver  on  the  host.  These  backenddrivers are invoked by well-designed para-APIs and can be reusedacross  many  MCU  OSs.  We  categorize  common  HAL  functionsinto  four  types  and  implement  templates  for  quick  backenddevelopment. Using the proposed approach, we have successfully rehosted  nine  MCU  OSs  including  the  widely  deployed  AmazonFreeRTOS, ARM Mbed OS, Zephyr and LiteOS. To demonstratethe  superiority  of  our  approach  in  terms  of  security  testing,  weused off-the-shelf dynamic analysis tools (AFL and ASAN) againstthe  rehosted  programs  and  discovered  24  previously-unknownbugs,  among  which  5  were  confirmed  by  CVE  and  others  wereconfirmed  by  vendors.">
+  <meta property="og:url" content="https://guanle.org/publication/harm/">
+  <meta property="og:title" content="HARM: Hardware-assisted Continuous Re-randomization for Microcontrollers | Le Guan">
+  <meta property="og:description" content="Microcontroller-based embedded systems (MCUs) have become ubiquitous with the emergence of IoT technology. Given its critical roles in many applications, its security is becoming increasingly important. Unfortunately, MCU devices are especially vulnerable. Code reuse attacks are particularly noteworthy since the memory address of firmware code is static. This work seeks to combat code reuse attacks, including ROP and more advanced JIT-ROP via continuous randomization. Previous proposals are geared towards full-fledged OSs with rich runtime environments, and therefore cannot be applied to MCUs. We propose the first solution for ARM-based MCUs leveraging the ARM TrustZone extension. Our system, named HARM, comprises a secure runtime and a binary analysis tool with rewriting module. The secure runtime, protected inside the secure world, proactively triggers and performs non-bypassable randomization to the firmware running in a sandbox in the normal world. Our system does not rely on any firmware feature, and therefore is generally applicable to both baremetal and RTOS-powered firmware. We have implemented a HARM prototype on a real development board. Our evaluation results indicate that the proposed system can effectively thaw code reuse attacks while keeping the performance and energy overhead low.">
   
   
     
   <meta property="og:image" content="https://guanle.org/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2021-01-01T00:00:00-05:00">
+  <meta property="article:published_time" content="2022-01-19T00:00:00-05:00">
   
-  <meta property="article:modified_time" content="2021-01-01T00:00:00-05:00">
-  
-
+  <meta property="article:modified_time" content="2022-01-19T00:00:00-05:00">
   
 
   
 
-  <title>From Library Portability to Para-rehosting: Natively Executing Open-source Microcontroller OSs on Commodity Hardware | Le Guan</title>
+  
+
+  <title>HARM: Hardware-assisted Continuous Re-randomization for Microcontrollers | Le Guan</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -275,7 +275,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">From Library Portability to Para-rehosting: Natively Executing Open-source Microcontroller OSs on Commodity Hardware</h1>
+  <h1 itemprop="name">HARM: Hardware-assisted Continuous Re-randomization for Microcontrollers</h1>
 
   
 
@@ -289,19 +289,22 @@
   
   <div>
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Wenqiang Li</span>
+      <span itemprop="name">Jiameng Shi</span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
       <span itemprop="name"><strong>Le Guan</strong></span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Jingqiang Lin</span>
+      <span itemprop="name">Wenqiang Li</span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Jiameng Shi</span>
+      <span itemprop="name">Dayou Zhang</span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Fengjun Li</span>
+      <span itemprop="name">Ping Chen</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Ping Chen</span>
     </span>
     
   </div>
@@ -309,9 +312,9 @@
 
   <span class="article-date">
     
-    <meta content="2021-01-01 00:00:00 -0500 EST" itemprop="datePublished">
-    <time datetime="2021-01-01 00:00:00 -0500 EST" itemprop="dateModified">
-      Jan 1, 2021
+    <meta content="2022-01-19 00:00:00 -0500 EST" itemprop="datePublished">
+    <time datetime="2022-01-19 00:00:00 -0500 EST" itemprop="dateModified">
+      Jan 19, 2022
     </time>
   </span>
   <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
@@ -331,35 +334,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=From%20Library%20Portability%20to%20Para-rehosting%3a%20Natively%20Executing%20Open-source%20Microcontroller%20OSs%20on%20Commodity%20Hardware&amp;url=https%3a%2f%2fguanle.org%2fpublication%2frehosting%2f"
+         href="https://twitter.com/intent/tweet?text=HARM%3a%20Hardware-assisted%20Continuous%20Re-randomization%20for%20Microcontrollers&amp;url=https%3a%2f%2fguanle.org%2fpublication%2fharm%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fguanle.org%2fpublication%2frehosting%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fguanle.org%2fpublication%2fharm%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-facebook-f"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fguanle.org%2fpublication%2frehosting%2f&amp;title=From%20Library%20Portability%20to%20Para-rehosting%3a%20Natively%20Executing%20Open-source%20Microcontroller%20OSs%20on%20Commodity%20Hardware"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fguanle.org%2fpublication%2fharm%2f&amp;title=HARM%3a%20Hardware-assisted%20Continuous%20Re-randomization%20for%20Microcontrollers"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fguanle.org%2fpublication%2frehosting%2f&amp;title=From%20Library%20Portability%20to%20Para-rehosting%3a%20Natively%20Executing%20Open-source%20Microcontroller%20OSs%20on%20Commodity%20Hardware"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fguanle.org%2fpublication%2fharm%2f&amp;title=HARM%3a%20Hardware-assisted%20Continuous%20Re-randomization%20for%20Microcontrollers"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=From%20Library%20Portability%20to%20Para-rehosting%3a%20Natively%20Executing%20Open-source%20Microcontroller%20OSs%20on%20Commodity%20Hardware&amp;body=https%3a%2f%2fguanle.org%2fpublication%2frehosting%2f">
+         href="mailto:?subject=HARM%3a%20Hardware-assisted%20Continuous%20Re-randomization%20for%20Microcontrollers&amp;body=https%3a%2f%2fguanle.org%2fpublication%2fharm%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -409,7 +412,7 @@
 
 
 <button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
-        data-filename="/publication/rehosting/rehosting.bib">
+        data-filename="/publication/harm/%7Bslugify%28entry%5B%27ID%27%5D%29%7D.bib">
   Cite
 </button>
 
@@ -439,7 +442,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Finding  bugs  in  microcontroller  (MCU)  firmwareis   challenging,   even   for   device   manufacturers   who   own   thesource  code.  The  MCU  runs  different  instruction  sets  than  x86and  exposes  a  very  different  development  environment.  Thisinvalidates  many  existing  sophisticated  software  testing  tools  onx86.  To  maintain  a  unified  developing  and  testing  environment,a  straightforward  way  is  to  re-compile  the  source  code  into  thenative  executable  for  a  commodity  machine  (called  rehosting).However,  ad-hoc re-hosting  is  a  daunting  and  tedious  task  and subject  to  many  issues  (library-dependence,  kernel-dependenceand  hardware-dependence).  In  this  work,  we  systematically  ex-plore the portability problem of MCU software and propose para-rehosting to ease the porting process. Specifically, we abstract andimplement a portable MCU (PMCU) using the POSIX interface. It  models  common  functions  of  the  MCU  cores.  For  peripheralspecific  logic,  we  propose  HAL-based  peripheral  function  re-placement,  in  which  high-level  hardware  functions  are  replacedwith  an  equivalent  backend  driver  on  the  host.  These  backenddrivers are invoked by well-designed para-APIs and can be reusedacross  many  MCU  OSs.  We  categorize  common  HAL  functionsinto  four  types  and  implement  templates  for  quick  backenddevelopment. Using the proposed approach, we have successfully rehosted  nine  MCU  OSs  including  the  widely  deployed  AmazonFreeRTOS, ARM Mbed OS, Zephyr and LiteOS. To demonstratethe  superiority  of  our  approach  in  terms  of  security  testing,  weused off-the-shelf dynamic analysis tools (AFL and ASAN) againstthe  rehosted  programs  and  discovered  24  previously-unknownbugs,  among  which  5  were  confirmed  by  CVE  and  others  wereconfirmed  by  vendors.</p>
+    <p class="pub-abstract" itemprop="text">Microcontroller-based embedded systems (MCUs) have become ubiquitous with the emergence of IoT technology. Given its critical roles in many applications, its security is becoming increasingly important. Unfortunately, MCU devices are especially vulnerable. Code reuse attacks are particularly noteworthy since the memory address of firmware code is static. This work seeks to combat code reuse attacks, including ROP and more advanced JIT-ROP via continuous randomization. Previous proposals are geared towards full-fledged OSs with rich runtime environments, and therefore cannot be applied to MCUs. We propose the first solution for ARM-based MCUs leveraging the ARM TrustZone extension. Our system, named HARM, comprises a secure runtime and a binary analysis tool with rewriting module. The secure runtime, protected inside the secure world, proactively triggers and performs non-bypassable randomization to the firmware running in a sandbox in the normal world. Our system does not rely on any firmware feature, and therefore is generally applicable to both baremetal and RTOS-powered firmware. We have implemented a HARM prototype on a real development board. Our evaluation results indicate that the proposed system can effectively thaw code reuse attacks while keeping the performance and energy overhead low.</p>
     
 
     
@@ -468,7 +471,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9"><em>28th Network and Distributed System Security Symposium, NDSS &lsquo;21</em></div>
+          <div class="col-12 col-md-9"><em>2022 IEEE European Symposium on Security and Privacy (EuroS&amp;P &lsquo;22), to appear</em></div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -482,7 +485,7 @@
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Date</div>
           <div class="col-12 col-md-9" itemprop="datePublished">
-            January, 2021
+            January, 2022
           </div>
         </div>
       </div>

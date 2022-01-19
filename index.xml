@@ -6,13 +6,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Mon, 06 Dec 2021 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 19 Jan 2022 00:00:00 -0500</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>HARM: Hardware-assisted Continuous Re-randomization for Microcontrollers</title>
+      <link>https://guanle.org/publication/harm/</link>
+      <pubDate>Wed, 19 Jan 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/harm/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>𝜇AFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware</title>
       <link>https://guanle.org/publication/uafl/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 -0500</pubDate>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 -0500</pubDate>
       
       <guid>https://guanle.org/publication/uafl/</guid>
       <description></description>
@@ -133,26 +142,6 @@
       
       <guid>https://guanle.org/publication/mem-vault/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Example Page</title>
-      <link>https://guanle.org/tutorial/example/</link>
-      <pubDate>Sun, 09 Sep 2018 00:00:00 -0400</pubDate>
-      
-      <guid>https://guanle.org/tutorial/example/</guid>
-      <description>
-
-&lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
-
-&lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
-
-&lt;p&gt;&amp;hellip;&lt;/p&gt;
-
-&lt;h2 id=&#34;tip-2&#34;&gt;Tip 2&lt;/h2&gt;
-
-&lt;p&gt;&amp;hellip;&lt;/p&gt;
-</description>
     </item>
     
   </channel>
