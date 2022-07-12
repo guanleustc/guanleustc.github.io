@@ -15,10 +15,10 @@
   
     
   
-  <meta name="description" content="Fuzzing is one of the most effective approaches to find software flaws. However, applying it to microcontroller firmware incurs many challenges. For example, rehosting-based solutions cannot accurately model peripheral behaviors and thus cannot be used to fuzz the corresponding driver code. In this work, we present 𝜇AFL, a hardware-assisted approach to fuzzing firmware on real devices. It leverages debugging tools in existing embedded system development to construct an AFL-compatible fuzzing framework. Specifically, we use the debug dongle to bridge the fuzzing environment on the PC and the target firmware on the microcontroller device. To collect code coverage information without costly code instrumentation, 𝜇AFL relies on the ARM ETM hardware debugging feature, which transparently collects the instruction trace and streams the results to the PC. However, the raw ETM data is obscure and needs enormous computing resources to recover the actual instruction flow. We therefore propose an alternative representation of code coverage, which retains the same path sensitivity as the original AFL algorithm, but can directly work on the raw ETM data without matching them with disassembled instructions. To further reduce the workload, we use the DWT hardware feature to selectively collect runtime information of interest. We evaluated 𝜇AFL on two real evaluation boards from two major vendors: NXP and STMicroelectronics. With our prototype, we discovered ten 0-day bugs in the driver code shipped with the SDK of STMicroelectronics and three 0-day bugs in the SDK of NXP. Considering the wide adoption of chip-vendor-provided SDK code in real products, our results are alarming.">
+  <meta name="description" content="Emulating firmware of microcontrollers is challenging due to the lack of peripheral models. Existing work finds out how to respond to peripheral read operations by analyzing the target firmware. This is problematic because the firmware sometimes does not contain enough clues to support the emulation or even contains misleading information (e.g., a buggy firmware). In this work, we propose a new approach that builds peripheral models from the peripheral specification. Using NLP, we translate peripheral behaviors in human language (documented in chip manuals) into a set of structured condition-action rules. By checking, executing, and chaining them at runtime, we can dynamically synthesize a peripheral model for each firmware execution. The extracted condition-action rules might not be complete or even be wrong. We, therefore, propose incorporating symbolic execution to quickly pinpoint the root cause. This assists us in the manual correction of the problematic rules. We have implemented our idea for five popular MCU boards spanning three different chip vendors. Using a new edit-distance-based algorithm to calculate trace differences, our evaluation against a large firmware corpus confirmed that our prototype achieves much higher fidelity compared with state-of-the-art solutions. Benefiting from the accurate emulation, our emulator effectively avoids false positives observed in existing fuzzing work. We also designed a new dynamic analysis method to perform driver code compliance checks against the specification. We found some non-compliance which we later confirmed to be bugs caused by race conditions.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://guanle.org/publication/uafl/">
+  <link rel="alternate" hreflang="en-us" href="https://guanle.org/publication/semu/">
 
   
 
@@ -100,30 +100,30 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://guanle.org/publication/uafl/">
+  <link rel="canonical" href="https://guanle.org/publication/semu/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Le Guan">
-  <meta property="og:url" content="https://guanle.org/publication/uafl/">
-  <meta property="og:title" content="𝜇AFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware | Le Guan">
-  <meta property="og:description" content="Fuzzing is one of the most effective approaches to find software flaws. However, applying it to microcontroller firmware incurs many challenges. For example, rehosting-based solutions cannot accurately model peripheral behaviors and thus cannot be used to fuzz the corresponding driver code. In this work, we present 𝜇AFL, a hardware-assisted approach to fuzzing firmware on real devices. It leverages debugging tools in existing embedded system development to construct an AFL-compatible fuzzing framework. Specifically, we use the debug dongle to bridge the fuzzing environment on the PC and the target firmware on the microcontroller device. To collect code coverage information without costly code instrumentation, 𝜇AFL relies on the ARM ETM hardware debugging feature, which transparently collects the instruction trace and streams the results to the PC. However, the raw ETM data is obscure and needs enormous computing resources to recover the actual instruction flow. We therefore propose an alternative representation of code coverage, which retains the same path sensitivity as the original AFL algorithm, but can directly work on the raw ETM data without matching them with disassembled instructions. To further reduce the workload, we use the DWT hardware feature to selectively collect runtime information of interest. We evaluated 𝜇AFL on two real evaluation boards from two major vendors: NXP and STMicroelectronics. With our prototype, we discovered ten 0-day bugs in the driver code shipped with the SDK of STMicroelectronics and three 0-day bugs in the SDK of NXP. Considering the wide adoption of chip-vendor-provided SDK code in real products, our results are alarming.">
+  <meta property="og:url" content="https://guanle.org/publication/semu/">
+  <meta property="og:title" content="What Your Firmware Tells You Is Not How You Should Emulate It: A Speciﬁcation-Guided Approach for Firmware Emulation | Le Guan">
+  <meta property="og:description" content="Emulating firmware of microcontrollers is challenging due to the lack of peripheral models. Existing work finds out how to respond to peripheral read operations by analyzing the target firmware. This is problematic because the firmware sometimes does not contain enough clues to support the emulation or even contains misleading information (e.g., a buggy firmware). In this work, we propose a new approach that builds peripheral models from the peripheral specification. Using NLP, we translate peripheral behaviors in human language (documented in chip manuals) into a set of structured condition-action rules. By checking, executing, and chaining them at runtime, we can dynamically synthesize a peripheral model for each firmware execution. The extracted condition-action rules might not be complete or even be wrong. We, therefore, propose incorporating symbolic execution to quickly pinpoint the root cause. This assists us in the manual correction of the problematic rules. We have implemented our idea for five popular MCU boards spanning three different chip vendors. Using a new edit-distance-based algorithm to calculate trace differences, our evaluation against a large firmware corpus confirmed that our prototype achieves much higher fidelity compared with state-of-the-art solutions. Benefiting from the accurate emulation, our emulator effectively avoids false positives observed in existing fuzzing work. We also designed a new dynamic analysis method to perform driver code compliance checks against the specification. We found some non-compliance which we later confirmed to be bugs caused by race conditions.">
   
   
     
   <meta property="og:image" content="https://guanle.org/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2022-01-01T00:00:00-05:00">
+  <meta property="article:published_time" content="2022-07-12T00:00:00-04:00">
   
-  <meta property="article:modified_time" content="2022-01-01T00:00:00-05:00">
-  
-
+  <meta property="article:modified_time" content="2022-07-12T00:00:00-04:00">
   
 
   
 
-  <title>𝜇AFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware | Le Guan</title>
+  
+
+  <title>What Your Firmware Tells You Is Not How You Should Emulate It: A Speciﬁcation-Guided Approach for Firmware Emulation | Le Guan</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
@@ -275,7 +275,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">𝜇AFL: Non-intrusive Feedback-driven Fuzzing for Microcontroller Firmware</h1>
+  <h1 itemprop="name">What Your Firmware Tells You Is Not How You Should Emulate It: A Speciﬁcation-Guided Approach for Firmware Emulation</h1>
 
   
 
@@ -289,22 +289,19 @@
   
   <div>
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Wenqiang Li</span>
+      <span itemprop="name">Wei Zhou</span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Jiameng Shi</span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">and Fengjun Li</span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Jingqiang Lin</span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Wei Wang</span>
+      <span itemprop="name">Lan Zhang</span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
       <span itemprop="name"><strong>Le Guan</strong></span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Peng Liu</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Yuqing Zhang</span>
     </span>
     
   </div>
@@ -312,9 +309,9 @@
 
   <span class="article-date">
     
-    <meta content="2022-01-01 00:00:00 -0500 EST" itemprop="datePublished">
-    <time datetime="2022-01-01 00:00:00 -0500 EST" itemprop="dateModified">
-      Jan 1, 2022
+    <meta content="2022-07-12 00:00:00 -0400 EDT" itemprop="datePublished">
+    <time datetime="2022-07-12 00:00:00 -0400 EDT" itemprop="dateModified">
+      Jul 12, 2022
     </time>
   </span>
   <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
@@ -334,35 +331,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=%f0%9d%9c%87AFL%3a%20Non-intrusive%20Feedback-driven%20Fuzzing%20for%20Microcontroller%20Firmware&amp;url=https%3a%2f%2fguanle.org%2fpublication%2fuafl%2f"
+         href="https://twitter.com/intent/tweet?text=What%20Your%20Firmware%20Tells%20You%20Is%20Not%20How%20You%20Should%20Emulate%20It%3a%20A%20Speci%ef%ac%81cation-Guided%20Approach%20for%20Firmware%20Emulation&amp;url=https%3a%2f%2fguanle.org%2fpublication%2fsemu%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fguanle.org%2fpublication%2fuafl%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fguanle.org%2fpublication%2fsemu%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-facebook-f"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fguanle.org%2fpublication%2fuafl%2f&amp;title=%f0%9d%9c%87AFL%3a%20Non-intrusive%20Feedback-driven%20Fuzzing%20for%20Microcontroller%20Firmware"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fguanle.org%2fpublication%2fsemu%2f&amp;title=What%20Your%20Firmware%20Tells%20You%20Is%20Not%20How%20You%20Should%20Emulate%20It%3a%20A%20Speci%ef%ac%81cation-Guided%20Approach%20for%20Firmware%20Emulation"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fguanle.org%2fpublication%2fuafl%2f&amp;title=%f0%9d%9c%87AFL%3a%20Non-intrusive%20Feedback-driven%20Fuzzing%20for%20Microcontroller%20Firmware"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fguanle.org%2fpublication%2fsemu%2f&amp;title=What%20Your%20Firmware%20Tells%20You%20Is%20Not%20How%20You%20Should%20Emulate%20It%3a%20A%20Speci%ef%ac%81cation-Guided%20Approach%20for%20Firmware%20Emulation"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=%f0%9d%9c%87AFL%3a%20Non-intrusive%20Feedback-driven%20Fuzzing%20for%20Microcontroller%20Firmware&amp;body=https%3a%2f%2fguanle.org%2fpublication%2fuafl%2f">
+         href="mailto:?subject=What%20Your%20Firmware%20Tells%20You%20Is%20Not%20How%20You%20Should%20Emulate%20It%3a%20A%20Speci%ef%ac%81cation-Guided%20Approach%20for%20Firmware%20Emulation&amp;body=https%3a%2f%2fguanle.org%2fpublication%2fsemu%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -412,7 +409,7 @@
 
 
 <button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
-        data-filename="/publication/uafl/%7Bslugify%28entry%5B%27ID%27%5D%29%7D.bib">
+        data-filename="/publication/semu/%7Bslugify%28entry%5B%27ID%27%5D%29%7D.bib">
   Cite
 </button>
 
@@ -442,7 +439,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Fuzzing is one of the most effective approaches to find software flaws. However, applying it to microcontroller firmware incurs many challenges. For example, rehosting-based solutions cannot accurately model peripheral behaviors and thus cannot be used to fuzz the corresponding driver code. In this work, we present 𝜇AFL, a hardware-assisted approach to fuzzing firmware on real devices. It leverages debugging tools in existing embedded system development to construct an AFL-compatible fuzzing framework. Specifically, we use the debug dongle to bridge the fuzzing environment on the PC and the target firmware on the microcontroller device. To collect code coverage information without costly code instrumentation, 𝜇AFL relies on the ARM ETM hardware debugging feature, which transparently collects the instruction trace and streams the results to the PC. However, the raw ETM data is obscure and needs enormous computing resources to recover the actual instruction flow. We therefore propose an alternative representation of code coverage, which retains the same path sensitivity as the original AFL algorithm, but can directly work on the raw ETM data without matching them with disassembled instructions. To further reduce the workload, we use the DWT hardware feature to selectively collect runtime information of interest. We evaluated 𝜇AFL on two real evaluation boards from two major vendors: NXP and STMicroelectronics. With our prototype, we discovered ten 0-day bugs in the driver code shipped with the SDK of STMicroelectronics and three 0-day bugs in the SDK of NXP. Considering the wide adoption of chip-vendor-provided SDK code in real products, our results are alarming.</p>
+    <p class="pub-abstract" itemprop="text">Emulating firmware of microcontrollers is challenging due to the lack of peripheral models. Existing work finds out how to respond to peripheral read operations by analyzing the target firmware. This is problematic because the firmware sometimes does not contain enough clues to support the emulation or even contains misleading information (e.g., a buggy firmware). In this work, we propose a new approach that builds peripheral models from the peripheral specification. Using NLP, we translate peripheral behaviors in human language (documented in chip manuals) into a set of structured condition-action rules. By checking, executing, and chaining them at runtime, we can dynamically synthesize a peripheral model for each firmware execution. The extracted condition-action rules might not be complete or even be wrong. We, therefore, propose incorporating symbolic execution to quickly pinpoint the root cause. This assists us in the manual correction of the problematic rules. We have implemented our idea for five popular MCU boards spanning three different chip vendors. Using a new edit-distance-based algorithm to calculate trace differences, our evaluation against a large firmware corpus confirmed that our prototype achieves much higher fidelity compared with state-of-the-art solutions. Benefiting from the accurate emulation, our emulator effectively avoids false positives observed in existing fuzzing work. We also designed a new dynamic analysis method to perform driver code compliance checks against the specification. We found some non-compliance which we later confirmed to be bugs caused by race conditions.</p>
     
 
     
@@ -471,7 +468,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9"><em>2022 IEEE/ACM 44rd International Conference on Software Engineering (ICSE &lsquo;22)</em></div>
+          <div class="col-12 col-md-9"><em>2022 ACM Conference on Computer and Communications Security (CCS &lsquo;22), to appear</em></div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -485,7 +482,7 @@
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Date</div>
           <div class="col-12 col-md-9" itemprop="datePublished">
-            January, 2022
+            July, 2022
           </div>
         </div>
       </div>
