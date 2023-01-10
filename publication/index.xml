@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Good Motive but Bad Design: Pitfalls in MPU Usage in Embedded Systems in the Wild</title>
+      <link>https://guanle.org/publication/mpu/</link>
+      <pubDate>Wed, 07 Dec 2022 00:00:00 -0500</pubDate>
+      
+      <guid>https://guanle.org/publication/mpu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>What Your Firmware Tells You Is Not How You Should Emulate It: A Speciﬁcation-Guided Approach for Firmware Emulation</title>
       <link>https://guanle.org/publication/semu/</link>
       <pubDate>Tue, 12 Jul 2022 00:00:00 -0400</pubDate>
