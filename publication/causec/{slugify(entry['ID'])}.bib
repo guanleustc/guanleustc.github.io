@@ -1,0 +1,9 @@
+@inproceedings{CAUSEC,
+ abstract = {As cold boot attacks become a realistic threat to cryptographic systems, several defense solutions have been proposed in the past decade to protect cryptographic systems against such attacks. Interestingly, most of these defense solutions are implemented at the kernel level. Yet running them at the kernel level is risky. Given the complexity of these defense solutions, they inevitably introduce vulnerabilities that could be exploited by attackers and then lead to the compromise of the entire operating system. In this paper, we present CAUSEC which avoids storing crypto keys and other sensitive information in the memory and performs key computation in the cache. CAUSEC protects cryptographic systems against cold boot attacks, but is mostly deprivileged to the user mode. Our experimental results demonstrate that CAUSEC secures key computation and incurs reasonable performance overhead: 11.99% in decryption rate and 7.1% in decryption/signing requests processing when incorporated with the Apache web server.},
+ author = {Shariful Alam and Le Guan and Zeyu Chen and Haining Wang and Jidong Xiao},
+ booktitle = {2023 IEEE 43nd International Conference on Distributed Computing Systems},
+ organization = {IEEE},
+ title = {CAUSEC: Cache-based Secure Key Computation with (Mostly) Deprivileged Execution},
+ year = {2023}
+}
+
