@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Fri, 14 Apr 2023 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 17 Aug 2023 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://guanle.org/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Facilitating Non-Intrusive In-Vivo Firmware Testing with Stateless Instrumentation</title>
+      <link>https://guanle.org/publication/ipea/</link>
+      <pubDate>Thu, 17 Aug 2023 00:00:00 -0400</pubDate>
+      
+      <guid>https://guanle.org/publication/ipea/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>CAUSEC: Cache-based Secure Key Computation with (Mostly) Deprivileged Execution</title>

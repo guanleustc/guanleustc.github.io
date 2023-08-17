@@ -13,6 +13,24 @@
     
     
     <item>
+      <title>Facilitating Non-Intrusive In-Vivo Firmware Testing with Stateless Instrumentation</title>
+      <link>https://guanle.org/publication/ipea/</link>
+      <pubDate>Thu, 17 Aug 2023 00:00:00 -0400</pubDate>
+      
+      <guid>https://guanle.org/publication/ipea/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Physical Devices-Agnostic Hybrid Fuzzing of IoT Firmware</title>
+      <link>https://guanle.org/publication/situ-2023-physical/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 -0400</pubDate>
+      
+      <guid>https://guanle.org/publication/situ-2023-physical/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>CAUSEC: Cache-based Secure Key Computation with (Mostly) Deprivileged Execution</title>
       <link>https://guanle.org/publication/causec/</link>
       <pubDate>Fri, 14 Apr 2023 00:00:00 -0400</pubDate>
