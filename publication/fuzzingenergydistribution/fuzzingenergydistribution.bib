@@ -1,9 +1,0 @@
-@inproceedings{fuzzingenergydistribution,
- abstract = {Existing energy distribution strategies of AFL and its variants have two limitations. (1) They focus on increasing coverage but ignore the fact that some code regions are more likely to be vulnerable. (2) They randomly select mutators and deterministically specify the number to mutator, therefore lack insights regarding which granularity of mutators are more helpful at that particular stage. We improve the two limitations of AFL’s fuzzing energy distribution in a principled way. We direct the fuzzer to strengthen fuzzing toward regions that have a higher probability to contain vulnerabilities based on static semantic metrics of the target program. Furthermore, granularity-aware scheduling of mutators is proposed, which dynamically assigns ratios to different mutation operators. We implemented these improvements as an extension to AFL. Large-scale experimental evaluations showed the effectiveness of each improvement and performance of integration. The proposed tool has helped us find 12 new bugs and expose three new CVEs.},
- author = {Situ, Lingyun and Wang, Linzhang and Li, Xuandong and Guan, Le and Zhang, Wenhui and Liu, Peng},
- booktitle = {41th International Conference on Software Engineering, ICSE'19},
- organization = {ACM/IEEE},
- title = {Poster: Energy Distribution Matters in Greybox Fuzzing},
- year = {2019}
-}
-
