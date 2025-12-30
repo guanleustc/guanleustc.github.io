@@ -1,0 +1,23 @@
+_site/
+note.md
+publish.sh
+
+
+
+
+.sass-cache
+/dross
+HIDEME
+/drafts
+/cache
+
+# ignore temp files w/ trailing ~
+*~
+
+CLAUDE.md
+
+# ignore hidden files
+.*
+
+# don't ignore the .gitignore file
+!.gitignore
