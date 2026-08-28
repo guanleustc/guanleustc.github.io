@@ -200,6 +200,7 @@
          authors: "Zixin Rao, Wentian Zhu, Chan Aristella Lu, Zhaorun Chen, Wei Niu, <span class='underline'>Le Guan</span>, Bo Li, Zhen Xiang",
          venue: "35th USENIX Security Symposium (Security '26)",
          pdf: "pdf/sec26-fragfuse.pdf",
+         code: "https://zixin22.github.io/fragfuse.github.io/",
          selected: true
        },
        {
@@ -207,6 +208,7 @@
          authors: "Shandian Shen, Wei Zhou, Keming Zhao, Peng Liu, Chung Hwan Kim, <span class='underline'>Le Guan</span>",
          venue: "2026 IEEE Symposium on Security and Privacy (Oakland '26)",
          pdf: "pdf/oakland26-fido.pdf",
+         code: "https://github.com/IoTS-P/FIDO",
          selected: true
        },
        {
@@ -214,8 +216,15 @@
          authors: "Wentian Zhu, Zhen Xiang, Wei Niu, <span class='underline'>Le Guan</span>",
          venue: "2026 IEEE Symposium on Security and Privacy (Oakland '26)",
          pdf: "pdf/oakland26.pdf",
-         code: "",
+         code: "https://github.com/Carson921/MetaBreak",
          selected: true
+       },
+       {
+         title: "Encrypted Fringe Projection Profilometry",
+         authors: "Yang Cheng, Zichen Gui, <span class='underline'>Le Guan</span>, Ran Jin, Beiwen Li",
+         venue: "Optics Letters 51(4), 881–884 (2026)",
+         pdf: "https://opg.optica.org/ol/abstract.cfm?uri=ol-51-4-881",
+         pdfLabel: "Publisher",
        }
      ],
      "2025": [
@@ -510,7 +519,7 @@
 
    // Helper function to render a publication
    function renderPublication(pub) {
-     let links = `<a class="text-blue-600" href="${pub.pdf}">PDF</a>`;
+     let links = `<a class="text-blue-600" href="${pub.pdf}">${pub.pdfLabel || 'PDF'}</a>`;
      if (pub.code) {
        links += ` | <a class="text-blue-600" href="${pub.code}">Source Code</a>`;
      }
