@@ -194,6 +194,20 @@
   <script>
    // Publication data with selected tags
    const publications = {
+     "2027": [
+       {
+         title: "SoK: A Large-Scale Empirical Study of Emulation-Based Dynamic Analysis Research for ARM Cortex-M Firmware",
+         authors: "Hongyuan Li, Ke Wang, Wei Zhou, <span class='underline'>Le Guan</span>",
+         venue: "Annual Network and Distributed System Security Symposium (NDSS '27)",
+         selected: true
+       },
+       {
+         title: "Real-Time-Aware Dynamic Instrumentation for Bare-Metal Arm Firmware",
+         authors: "Timothy James Minning, <span class='underline'>Le Guan</span>",
+         venue: "2027 IEEE Symposium on Security and Privacy (Oakland '27)",
+         selected: true
+       }
+     ],
      "2026": [
        {
          title: "FragFuse: Bypassing Access Control of Large Language Model Agents via Memory-Based Query Fragmentation and Fusion",
@@ -234,7 +248,7 @@
          venue: "32nd Network and Distributed System Security Symposium (NDSS '25)",
          pdf: "pdf/ndss25.pdf",
          code: "https://gitlab.com/s3lab-code/public/tzds",
-         selected: true
+         selected: false
        },
        {
          title: "BSan: A Powerful Identifier-Based Hardware-Independent Memory Error Detector for COTS Binaries",
@@ -242,7 +256,7 @@
          venue: "47th International Conference on Software Engineering (ICSE '25)",
          pdf: "pdf/icse25.pdf",
          code: "https://github.com/dvaave/BSan",
-         selected: true
+         selected: false
        }
      ],
      "2024": [
@@ -519,9 +533,9 @@
 
    // Helper function to render a publication
    function renderPublication(pub) {
-     let links = `<a class="text-blue-600" href="${pub.pdf}">${pub.pdfLabel || 'PDF'}</a>`;
+     let links = pub.pdf ? `<a class="text-blue-600" href="${pub.pdf}">${pub.pdfLabel || 'PDF'}</a>` : '';
      if (pub.code) {
-       links += ` | <a class="text-blue-600" href="${pub.code}">Source Code</a>`;
+       links += `${links ? ' | ' : ''}<a class="text-blue-600" href="${pub.code}">Source Code</a>`;
      }
 
      return `
@@ -529,7 +543,7 @@
          <div><strong>${pub.title}</strong></div>
          <div>${pub.authors}</div>
          <div><em>${pub.venue}</em></div>
-         <div>${links}</div>
+         ${links ? `<div>${links}</div>` : ''}
        </li>
      `;
    }
@@ -538,7 +552,7 @@
    function renderSelectedPublications() {
      let html = '';
      // Use the same year order as All Publications (newest first)
-     const yearOrder = ["2026", "2025", "2024", "2023", "2022", "2021", "2020 and earlier"];
+     const yearOrder = ["2027", "2026", "2025", "2024", "2023", "2022", "2021", "2020 and earlier"];
 
      yearOrder.forEach(year => {
        if (publications[year]) {
@@ -556,7 +570,7 @@
    function renderAllPublications() {
      let html = '';
      // Define year order explicitly (newest first)
-     const yearOrder = ["2026", "2025", "2024", "2023", "2022", "2021", "2020 and earlier"];
+     const yearOrder = ["2027", "2026", "2025", "2024", "2023", "2022", "2021", "2020 and earlier"];
 
      yearOrder.forEach(year => {
        if (publications[year]) {
